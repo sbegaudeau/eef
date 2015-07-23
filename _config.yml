@@ -1,0 +1,10 @@
+name: EEF Developers
+author :
+  name : Stéphane Bégaudeau
+  email : stephane.begaudeau@obeo.fr
+encoding: utf-8
+markdown: redcarpet
+pygments: true
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "tables"]
+exclude: []
