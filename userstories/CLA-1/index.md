@@ -13,4 +13,7 @@ In order to have continuous integration of my project we need:
 * Promotion on a nightly update site
 * Aggregation in the Simultaneous Release
 
-[Bugzilla](https://bugs.eclipse.org/bugs/)
+The EEF project could also be moved to /modeling/eef in order to have the liberty to choose what we can add in our Bugzilla. Gerrit would also be a must have on the project.
+
+* [Move EEF to modeling/eef](https://bugs.eclipse.org/bugs/show_bug.cgi?id=473512)
+* [Gerrit for EEF](https://bugs.eclipse.org/bugs/show_bug.cgi?id=473516)
