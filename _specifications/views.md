@@ -12,7 +12,11 @@ As a Sirius specifier, Zoe wants to describe a view for her domain. She wants to
 
 ##### Functional Specification
 
+Since EEF 1.x and EEF 2.x will need to be installable at the same time, EEF 2.x should not use the same namespace as EEF 1.X. As a result, the DSL describe here would be located in a bundle named org.eclipse.eef.core and more specifically in a package named org.eclipse.eef.core.views.
+
 ###### Views Model
+
+[![Screenshot]({{ site.baseurl }}specifications/images/views/screenshot.png "Screenshot")]({{ site.baseurl }}specifications/images/views/screenshot.png)
 
 {% highlight java linenos %}
 @Ecore(nsURI="http://www.eclipse.org/eef/core/views/2.0.0", nsPrefix="eef-views")
