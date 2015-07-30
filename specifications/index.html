@@ -11,15 +11,15 @@ title: Specifications
           <table class="mdl-data-table mdl-data-table--borderless mdl-js-data-table mdl-cell--12-col">
             <thead>
               <tr>
-                <th class="mdl-data-table__cell--non-numeric">Identifier</th>
                 <th class="mdl-data-table__cell--non-numeric">Title</th>
               </tr>
             </thead>
             <tbody>
+              {% for specification in site.specifications %}
               <tr>
-                <td class="mdl-data-table__cell--non-numeric"><a href="{{ site.baseurl }}specifications/SPEC-1">SPEC-1</a></td>
-                <td class="mdl-data-table__cell--non-numeric">EEF Metamodels.</td>
+                <td class="mdl-data-table__cell--non-numeric"><a href="{{ specification.url }}">{{ specification.description }}</a></td>
               </tr>
+              {% endfor %}
             </tbody>
           </table>
         </div>

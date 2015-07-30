@@ -11,6 +11,11 @@ title:
         <p>
           The Extended Editing Framework is a presentation framework for the Eclipse Modeling Framework. It allows user to create rich user interfaces to edit EMF models.
         </p>
+        <ul>
+          {% for collection in site.collections %}
+            <li>{{ collection[0] }}</li>
+          {% endfor %}
+        </ul>
       </div>
       <div class="mdl-card__actions">
         <a href="{{ site.baseurl }}features" class="mdl-button">Have a look at our features</a>

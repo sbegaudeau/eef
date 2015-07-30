@@ -127,14 +127,6 @@ html, body {
   flex-shrink: 0;
   padding-top: 8px;
 }
-.mdl-eef section .section__text h5 {
-  font-size: inherit;
-  margin: 0;
-  margin-bottom: 0.5em;
-}
-.mdl-eef section .section__text a {
-  text-decoration: none;
-}
 .mdl-eef section .section__circle-container > .section__circle-container__circle {
   width: 64px;
   height: 64px;

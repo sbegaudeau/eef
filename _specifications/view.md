@@ -1,32 +1,63 @@
 ---
 layout: specification
-title: SPEC-1
-description: EEF Metamodels.
+description: Views DSL
 ---
-##### Description
+The View DSL of the EEF project should let us describe how the user interface will be structured. This DSL, similar in its goal to a Sirius odesign, will be connected to the concepts from the domain model of the user.
 
-This specification will contain the details of all the EEF meta-models.
+##### User stories
 
-##### Goal
+###### Zoe - Sirius Specifier
 
-The meta-models of EEF are needed in order to define:
+As a Sirius specifier, Zoe wants to describe a view for her domain. She wants to be able to define multiple pages for her views including a default page that the use will see first. She wants to define the use of multiple widgets in a page. Some widget should be able to contain child widgets in order to define an advanced layout. She also want to bind the concepts of EEF to some expressions which could query her domain models. Zoe does not want to link directly the EEF concepts to EStructuralFeatures or EClasses.
 
-* The dialect used to describe the views
-* The toolkit used to represent the views
+##### Functional Specification
 
-Naming convention matching Sirius' one
+###### Views Model
 
-TO IMPROVE
+{% highlight java linenos %}
+@Ecore(nsURI="http://www.eclipse.org/eef/core/views/2.0.0", nsPrefix="eef-views")
+package org.eclipse.eef.core.views
 
-##### User stories & actors
+import org.eclipse.eef.core.widgets.Widget
 
-TODO
+class View {
+  String identifier
+  String[] ePackageNsUris
+  contains Page[] pages
+}
 
-##### Function Specification
+class Page {
+  String identifier
+  String labelExpression
+  String domainClass
+  String semanticCandidatesExpression
+  contains Section[] sections
+}
 
-TODO
+class Section {
+  String identifier
+  String labelExpression
+  String domainClass
+  String semanticCandidatesExpression
+  contains Mapping[] mappings
+}
 
-Existing systems and interfaces
+abstract class Mapping {
+  Style labelExpression
+}
+
+class StructuralMapping extends Mapping {
+  contains Mapping[] mappings
+}
+
+class SemanticMapping extends Mapping {
+  String featureName
+  refers Widget widget
+}
+
+{% endhighlight %}
+
+# PREVIOUS API!!!
 
 ###### Editing Model
 
@@ -201,24 +232,4 @@ class ViewReference extends ViewElement, IdentifiedElement {
 class IdentifiedElement {
   String qualifiedIdentifier
 }
-{% endhighlight %}
-
-###### Toolkits Model
-
-{% highlight java linenos %}
-@Ecore(nsURI="http://www.eclipse.org/emf/eef/views/toolkits/1.0.0", nsPrefix="eef-views")
-package org.eclipse.emf.eef.views.toolkits
-
-class Toolkit {
-  String name
-  contains Widget[] widgets opposite toolkit
-}
-
-class Widget {
-  String name
-  String injection
-  String Implementation
-  container Toolkit toolkit opposite widgets
-}
-
 {% endhighlight %}
