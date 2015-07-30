@@ -17,7 +17,7 @@ title: Specifications
             <tbody>
               {% for specification in site.specifications %}
               <tr>
-                <td class="mdl-data-table__cell--non-numeric"><a href="{{ specification.url }}">{{ specification.description }}</a></td>
+                <td class="mdl-data-table__cell--non-numeric"><a href="{{ site.baseurl }}{{ specification.url | replace_first:'/','' }}">{{ specification.description }}</a></td>
               </tr>
               {% endfor %}
             </tbody>
