@@ -12,7 +12,7 @@ As a Sirius specifier, Zoe wants to describe a view for her domain. She wants to
 
 ##### Functional Specification
 
-Since EEF 1.x and EEF 2.x will need to be installable at the same time, EEF 2.x should not use the same namespace as EEF 1.X. As a result, the DSL describe here would be located in a bundle named org.eclipse.eef.core and more specifically in a package named org.eclipse.eef.core.views.
+Since EEF 1.x and EEF 2.x will need to be installable at the same time, EEF 2.x should not use the same namespace as EEF 1.X. As a result, the DSL describe here would be located in a bundle named org.eclipse.eef.core and more specifically in a package named org.eclipse.eef.core.api.views.
 
 ###### Views Model
 
@@ -20,9 +20,9 @@ Since EEF 1.x and EEF 2.x will need to be installable at the same time, EEF 2.x 
 
 {% highlight java linenos %}
 @Ecore(nsURI="http://www.eclipse.org/eef/core/views/2.0.0", nsPrefix="eef-views")
-package org.eclipse.eef.core.views
+package org.eclipse.eef.core.api.views
 
-import org.eclipse.eef.core.widgets.Widget
+import org.eclipse.eef.core.api.widgets.Widget
 
 class View {
   String identifier
@@ -50,13 +50,20 @@ abstract class Mapping {
   Style labelExpression
 }
 
-class StructuralMapping extends Mapping {
+class SemanticMapping extends Mapping {
+  String domainClass
+  String semanticCandidatesExpression
+  refers Widget widget
+}
+
+class Container extends Mapping {
+  Direction direction
   contains Mapping[] mappings
 }
 
-class SemanticMapping extends Mapping {
-  String featureName
-  refers Widget widget
+enum Direction {
+  HORIZONTAL
+  VERTICAL
 }
 
 {% endhighlight %}
