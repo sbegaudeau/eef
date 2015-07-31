@@ -19,7 +19,7 @@ Since EEF 1.x and EEF 2.x will need to be installable at the same time, EEF 2.x 
 [![Screenshot]({{ site.baseurl }}specifications/images/views/screenshot.png "Screenshot")]({{ site.baseurl }}specifications/images/views/screenshot.png)
 
 {% highlight java linenos %}
-@Ecore(nsURI="http://www.eclipse.org/eef/core/views/2.0.0", nsPrefix="eef-views")
+@Ecore(nsURI="http://www.eclipse.org/eef/core/views/2.0.0", nsPrefix="eef-core-views")
 package org.eclipse.eef.core.api.views
 
 import org.eclipse.eef.core.api.widgets.Widget

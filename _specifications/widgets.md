@@ -123,7 +123,7 @@ Thus in order to define the Checkbox used to display the status of the EAttribut
 ###### Widgets Model
 
 {% highlight java linenos %}
-@Ecore(nsURI="http://www.eclipse.org/eef/core/widgets/1.0.0", nsPrefix="eef-widgets")
+@Ecore(nsURI="http://www.eclipse.org/eef/core/widgets/1.0.0", nsPrefix="eef-core-widgets")
 package org.eclipse.eef.core.api.widgets
 
 class Toolkit {
