@@ -54,7 +54,7 @@ abstract class Mapping {
 class SemanticMapping extends Mapping {
   String domainClass
   String semanticCandidatesExpression
-  refers Widget widget
+  contains Widget widget
 }
 
 class Container extends Mapping {

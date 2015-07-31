@@ -3,7 +3,7 @@ layout: specification
 description: Widgets DSL
 ---
 
-We need to be able to define a toolkit which will be used to create the user interface manipulated by the end users.
+We need to be able to define the widgets which will be used to create the user interface manipulated by the end users.
 
 ##### User Stories
 
@@ -19,7 +19,7 @@ As a Sirius specifier, Zoe wants to have a set of widgets that can be used in or
 
 ##### Functional Specification
 
-A concept named Toolkit will hold all the widgets of the model. This concept only has an identifier and a list of widgets. Each widget has an identifier and it as an opposite reference to the Toolkit in order to navigate to it more easily.
+The widgets are contained inside the mapping of the views directly in a similar fashion as Sirius.
 
 ###### Text
 
@@ -126,14 +126,8 @@ Thus in order to define the Checkbox used to display the status of the EAttribut
 @Ecore(nsURI="http://www.eclipse.org/eef/core/widgets/1.0.0", nsPrefix="eef-core-widgets")
 package org.eclipse.eef.core.api.widgets
 
-class Toolkit {
-  String identifier
-  contains Widget[] widgets opposite toolkit
-}
-
 abstract class Widget {
   String identifier
-  container Toolkit toolkit opposite widgets
 }
 
 class Variable {
