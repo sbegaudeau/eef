@@ -27,6 +27,7 @@ import org.eclipse.eef.core.api.widgets.Widget
 class View {
   String identifier
   String[] ePackageNsUris
+  refers Page defaultPage
   contains Page[] pages
 }
 
