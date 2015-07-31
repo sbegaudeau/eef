@@ -54,7 +54,7 @@ The concept of Radio widget requires a proposal expression which will return the
 
 In order to display a choice between several page for a view to select the default page, we could use the following proposals expression:
 
-* aql:self.eResource().eAllContent(Page) // Highly not optimized
+* aql:self.eResource().eAllContent(Page) // Highly unoptimized
 
 In order to display those Pages retrieved, we could use the following proposal label expression:
 
@@ -72,7 +72,7 @@ And to edit this value, we could use:
 
 The concept of the Select widget will require a boolean indicating if the Select widget should allow a single value selected or multiple values selected. This widget would have a behavior similar to the Radio widget. As a result, to display the list of EClass which could act as the supertype of a current EClass, we could use the following proposals expression:
 
-* aql:self.eResource().eAllContents(EClass).excluding(self) // Highly not optimized
+* aql:self.eResource().eAllContents(EClass).excluding(self) // Highly unoptimized
 
 To display those results, we could use the following proposal label expression:
 
@@ -91,34 +91,9 @@ In order to edit the current value, we could use the expressions:
 
 We have to consider that if the Select widget has its field multiple set to false, arg0 will contain an object, if multiple is set to true, arg0 will contain a collection.
 
-###### Table, Column and Line
+###### Cell Widget
 
-EEF also need to be able to display tables and as such, we need to be able to define them using the Widget DSL. A Table is a regular widget with a collection of columns and lines. A Line will be defined using a domain class indicating the kind of element used on the Line. As an example, we will display the content of an EPackage in a Table. Each line will represent an EClass and we will have two columns indicating if an EClass is abstract and the name of the EClass.
-
-First, we will use the following domain class for the line:
-
-* ecore.EClass
-
-We will use the same convention as Sirius using the prefix of the EPackage then a dot and then the name of the EClassifier. Then we will use a semantic candidates expression in order to retrieve all the values to display:
-
-* aql:self.eClassifiers->filter(ecore::EClass)
-
-We will also define a header label expression to define the label of the lines. If such expression is not available, the column with the label of the lines will not be displayed:
-
-* feature:name
-
-Then, we will need to define the column to display for the semantic elements retrieved. Each column will have a header label expression used for the label of the column, for example:
-
-* Abstract
-* aql:'Abstract EClass'
-
-In order to display the data, in a cell, we will need to have a widget. For this need, several widget can extends the concept Cell widget which is used in order to identify the widgets that can be used within the cells of a Table. In the Widgets DSL, the following widgets can be used a cell widget:
-
-* Text
-* Checkbox
-* Select
-
-Thus in order to define the Checkbox used to display the status of the EAttribute abstract of the EClasses displayed, we could use a configuration similar to the one presented previously in this document.
+The concept of Cell widget is used to identify the different kind of widgets that can be used in the cell of a table.
 
 ###### Widgets Model
 
@@ -162,22 +137,6 @@ class Select extends CellWidget {
   String proposalLabelExpression
   String editExpression
   contains Variable editVariable
-}
-
-class Table extends Widget {
-  contains Column[] columns
-  contains Line[] lines
-}
-
-class Column {
-  String headerLabelExpression
-  contains CellWidget cellWidget
-}
-
-class Line {
-  String domainClass
-  String semanticCandidatesExpression
-  String headerLabelExpression
 }
 
 {% endhighlight %}
