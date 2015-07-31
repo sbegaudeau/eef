@@ -98,8 +98,8 @@ The concept of Cell widget is used to identify the different kind of widgets tha
 ###### Widgets Model
 
 {% highlight java linenos %}
-@Ecore(nsURI="http://www.eclipse.org/eef/core/widgets/1.0.0", nsPrefix="eef-core-widgets")
-package org.eclipse.eef.core.api.widgets
+@Ecore(nsURI="http://www.eclipse.org/eef/widgets/1.0.0", nsPrefix="eef-widgets")
+package org.eclipse.eef.api.widgets
 
 abstract class Widget {
   String identifier

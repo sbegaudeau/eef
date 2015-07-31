@@ -131,4 +131,23 @@ title: Contribution Guide
     </div>
   </section>
 
+  <section class="section--center mdl-grid">
+    <div class="mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
+      <div class="mdl-card__supporting-text">
+        <h4>EEF Bundles and Features</h4>
+        <p>
+          This is the list of all the bundles and features of the project along with their role:
+        </p>
+        <ul>
+          <li>org.eclipse.eef - Bundle containing the EEF meta-models</li>
+          <li>org.eclipse.eef.edit - Bundle containing the EMF Edit part for the meta-models</li>
+          <li>org.eclipse.eef.core - Core bundle of EEF</li>
+        </ul>
+        <p>
+          The EEF packages are either named org.eclipse.eef.[...].api.[...] or org.eclipse.eef.[...].internal.[...]. All packages will be exported but the internal ones will be exported with the internal or x-friend annotation. All the packages are properly versionned using the baseliner.
+        </p>
+      </div>
+    </div>
+  </section>
+
 </div>
