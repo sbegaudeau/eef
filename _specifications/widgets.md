@@ -155,7 +155,7 @@ class Checkbox extends CellWidget {
 }
 
 class Radio extends Widget {
-  Object[] proposalsExpression
+  String proposalsExpression
   String proposalLabelExpression
   String valueExpression
   String editExpression
@@ -164,7 +164,7 @@ class Radio extends Widget {
 
 class Select extends CellWidget {
   boolean multiple
-  Object[] proposalsExpression
+  String proposalsExpression
   String proposalLabelExpression
   String editExpression
   contains Variable editVariable
