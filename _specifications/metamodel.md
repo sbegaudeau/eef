@@ -12,16 +12,21 @@ Zoe needs to define a Properties view for her Sirius designer. As the root conce
 
 The label of the *View* can be easily defined using the property *labelExpression*. This property will contain an *expression* which will be interpreted using the available interpreters in the EEF runtime. Some of the interpreters currently used by Sirius specifiers will be available. This label of the *View* will be used as the label of the Eclipse's Workbench View when the EEF *View* is used an Eclipse View.
 
+In order to compute the value of the expressions, some variables will be accessible. As an example, the input of the View will be available using the *Variable* in the property *inputVariable* of the View. A *Variable* has only a name and it is used to store the name of the value that will be available in the expression. For example, using an EClass as an input, and using the *name* "inputValue" for the *Variable* *inputVariable*, the label of the view could be computed to display the name of the input EClass with the *labelExpression*: "aql:inputValue.name"
+
 New concepts:
 
 * View
 * View#identifier
 * View#ePackageNsUris
 * View#labelExpression
+* View#inputVariable
+* Variable
+* Variable#name
 
 ###### US-2 As a Sirius specifier, Zoe wants to define tabs in a view to separate the different concerns
 
-In order to show the various aspects of the objects that Zoe wants to edit, she wants to separate those various aspects using tabs. To represent those tabs, we will use the concept of *Page* in our meta-model. The *Page* needs to be identifiable using a property named *identifier*. The tab created by the *Page* needs to have a label to be identified by the end users. Zoo will be able to use the property *labelExpression*, in order to be able to compute this label easily.
+In order to show the various aspects of the objects that Zoe wants to edit, she wants to separate those various aspects using tabs. To represent those tabs, we will use the concept of *Page* in our meta-model. The *Page* needs to be identifiable using a property named *identifier*. The tab created by the *Page* needs to have a label to be identified by the end users. Zoe will be able to use the property *labelExpression*, in order to be able to compute this label easily.
 
 Each *Page* will let the end users work on a different aspect of the input of the *View*. As a result, Zoe needs to be able to specify the context used as the root of the *Page*. Using a similar approach as Eclipse's Sirius, the *Page* will contain a *domainClass* and a *semanticCandidateExpression* in order to specify the EClass of the context of the *Page* and how this context should be computed from the input of the *View*.
 
@@ -59,17 +64,19 @@ This approach creates an issue since that in order to display an EObject, the sp
 
 With the behavior introduced previously, we just have to create the *Groups* for our EClasses and the *Page* will automatically reuse them to display the various properties of all the EObjects using said EClasses. We can factorize easily the behavior of the properties of the inheritance tree. If Zoe wants to customize the *Groups* used for the *Page* of a specific EClass, she can manually reference the *Groups* used by a specific *Page*. With this she can also customize the order of appearance of the *Groups* for a specific *Page* since, if explicitly specified, the order to the *Groups* will follow the order defined in the property *groups* of the *Page*. It will also allow Zoe to prevent the use of specific *Groups* for a *Page* by not referencing them among the *Groups* explicitly referenced in the property *groups* of the *Page*.
 
+Since the *Group* will be defined in the *View* but used in the *Page*, a *Variable* named *pageSemanticCandidateVariable* in the *Group* will be used to capture the result of the expression *semanticCandidateExpression* define in the *Page*. This way, the *Group* can know the name of the variable which will hold the context of its parent, the *Page* and the various *Pages* using the *Group* can define their context easily using the expression *semanticCandidateExpression*.
+
 New concepts:
 
 * View#groups
 * Page#groups
+* Group#pageSemanticCandidateVariable
 
 ###### US-5 As a Sirius specifier, Zoe wants to reuse the *Groups* used for a specific *Page*
 
-In the previous user story, we have defined how the *Page* will reuse the *Groups* automatically of as specified by the Sirius specifier. Now let's consider a scenario where Zoe has already customized the *Groups* used by some *Pages* for Ecore and now she wants to define the *Pages* for Genmodel but she wants to reuse the custom set of *Groups* defined in some existing *Pages*. In order to achieve this, Zoe can import other *Views* in the definition of her *View* using the property *importedViews* and she can
+In the previous user story, we have defined how the *Page* will reuse the *Groups* automatically of as specified by the Sirius specifier. Now let's consider a scenario where Zoe has already customized the *Groups* used by some *Pages* for Ecore and now she wants to define the *Pages* for Genmodel but she wants to reuse the custom set of *Groups* defined in some existing *Pages*. In order to achieve this, Zoe can import other *Views* in the definition of her *View* using the property *importedViews* and she can then extend an existing *Page* to retrieve the specific configuration of the *Groups* of the *Page*. She can extends the set of *Groups* used in the extended *Page* by specifying new *Groups* to use additionally in her *Page*.
 
--> To not have to reimport everything, we will be able to extends Pages
--> To extend Pages of other View definitions, we can import other Views
+As such, she can define a *Page* for the concept GenClass which can contain a *Group* for the properties of GenClass and which extends an existing *Page* defined in another *View* to display EClass. This *Page* used to display an EClass had already defined a set of *Groups* that should be displayed in a specific order using for example a *Group* for EClass followed by a *Group* for EClassifier. As a result, the final *Page* would have firstly the *Group* for EClass, followed by the *Group* for EClassifier and finally the *Group* for GenClass.
 
 New concepts:
 
