@@ -121,7 +121,7 @@ package eef{
 }
 {% endhighlight %}
 
-![Expression meta-model usage]({{ site.baseurl }}specifications/images/expression-metamodel-usage "Expression meta-model usage") 
+![Expression meta-model usage]({{ site.baseurl }}specifications/images/expression-metamodel-usage.png "Expression meta-model usage") 
 
 ###### US-7 As an EEF contributor, Claire wants to specify that an expression returns nothing 
 Claire wants to define an expression which does not return any element. For example, Claire specifies the onClickExpression which represents the action called after the final user clicked on a link in the properties view. In this case she defines as returnType for the expression: "Void".
