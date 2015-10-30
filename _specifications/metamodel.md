@@ -275,7 +275,7 @@ New concepts:
 ####### US-18 One widget for n structural feature
 
 
-####### U-19 Complex example for semanticCandidatesExpression and domainClass
+####### US-19 Complex example for semanticCandidatesExpression and domainClass
 
 
 GROUP#PAGE SEMANTIC CANDIDATE VARIABLE
@@ -294,3 +294,4 @@ Additional user stories
 * how to represent the customization and when should they be activated?
 * how to decide when a tab / a widget / a set of widget should be refreshed?
 * rename the widgets in WText, WLabel, WCheckbox, etc?
+* live preview editor as in Sirius
