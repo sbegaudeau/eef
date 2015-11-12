@@ -35,7 +35,12 @@ The goal of this meeting is to define the status of the project and the planning
 
 ##### What should be done to obtain this minimum viable product?
 
-- Continuous integration
+- Continuous integration & Gerrit
+- Sirius integration (metamodel & transaction)
+- Restrained number of widgets: text, checkbox, selectbox (multiple and single)
+- Context -> viewpoint, representation, layer, filter, mapping
+- Interpreter (AQL)
+- Lower priority for the tooling -> potential issues for the user stories related to EMF / EMF Edit (diagnostician, choice of values, etc)
 
 ##### Planning
 
