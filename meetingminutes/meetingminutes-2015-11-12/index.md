@@ -13,6 +13,10 @@ The goal of this meeting is to define the status of the project and the planning
 * Stéphane Bégaudeau
 * Pierre-Charles David
 
+##### Whiteboard
+
+[![Whiteboard](whiteboard_th.png)](whiteboard.png)
+
 ##### What is necessary for a minimum viable product?
 
 - widgets?
@@ -27,20 +31,14 @@ The goal of this meeting is to define the status of the project and the planning
 - model explorer view support? (selection of any EObject)
 - support for custom EDataType?
 
-##### User stories
-
-- Define a Properties view for the odesign file editor
-- Add a text field to edit the name of my properties
-- Integration with EMF Edit?
-
 ##### What should be done to obtain this minimum viable product?
 
+- Resume the work on the conception
+- Define the components of the application, how do they work together etc
 - Continuous integration & Gerrit
 - Sirius integration (metamodel & transaction)
-- Restrained number of widgets: text, checkbox, selectbox (multiple and single)
+- Restrained number of widgets: text, checkbox, selectbox
 - Context -> viewpoint, representation, layer, filter, mapping
-- Interpreter (AQL)
-- Lower priority for the tooling -> potential issues for the user stories related to EMF / EMF Edit (diagnostician, choice of values, etc)
 
 ##### Planning
 
