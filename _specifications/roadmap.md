@@ -8,7 +8,7 @@ description: Roadmap
 
 The goal of this milestons is to build an industrialized demonstration.
 
-###### Mappings
+###### Widgets
 
 - text
   - lifecycle (edit initial operation / valueExpression)
@@ -22,6 +22,8 @@ The goal of this milestons is to build an industrialized demonstration.
   - model explorer ~> lack of context with the Eclipse Sirius bridge
 
 ###### Interpreters
+
+This work will be realized by the Sirius team.
 
 - new interpreter API in sirius
   - variables lifecycle (remove setVariables / unsetVariables)
@@ -62,60 +64,85 @@ We need to have a clear vision of the way the lifecycle of our application works
 
 ###### Release engineering and project management
 
-- Technical documentation
-- Unit tests, continuous integration and integration with Gerrit
-- Contribute to the EEF update site for Eclipse Sirius
+- technical documentation
+- unit tests, continuous integration and integration with Gerrit
+- contribute to the EEF update site for Eclipse Sirius
 
 ###### Widgets for M4
 
-- Text
-- Checkbox
-- Combo
+- text
+- checkbox
+- combo
 
 
 ##### M5 29/01/16 +7
 
-- Dialog & wizard (dérisqué)
-- emf.edit, (clarifier les besoins, pour lancer le dev dans sirius pour se brancher dessus dans M6)
-  - Utilisation de label provider
-  - Choice of value
-  - Diagnostician (message, feature, context, etc)
-  - EDataType validation (see [this](http://eclipsesource.com/blogs/2014/08/26/emf-validation-for-datatype-constraints/))
-  - eSet / eGet
-- I18N des VSM côté Sirius exploitable par eef (EMF.edit par défaut)
-- Implémentation du widget custom
-- 1 widget complexe (link eref viewer)
-  - Trouver un nouveau nom :)
-  - Définition dans properties.ecore
-- Undo partiel (opérations multi étapes/cancel) (best practices)
-- Multi selection définition du besoin, 1er proto pour mise en place de la structure pour implem dans M6)
-- Doc technique
-- Tests
+###### Dialogs and wizards
+
+We need to evaluate how we can create dialogs & wizards
+
+- undo / cancel (best practices)
+- UI thread / jobs interactions
+
+###### EMF Edit
+
+We need to specify how to integrate emf.edit. This work will be realized by the Sirius team.
+
+- label provider
+- choice of value
+- diagnostician (message, feature, context, etc)
+- EDataType validation (see [this](http://eclipsesource.com/blogs/2014/08/26/emf-validation-for-datatype-constraints/))
+- eSet / eGet
+- evaluation of the usage I18N form Sirius in eef (fallback to EMF.edit by default)
+
+###### Widgets
+
+- implementation of the custom widget
+- creation of a complex widget (link eref viewer)
+  - find its new name :)
+  - definition in properties.ecore
+  - implementation
+- support for multi selection
+  - evaluate the need for this feature and its behavior (what should we display)
+  - 1st prototype and final implementation in M6
+
+###### Release engineering and project management
+
+- technical documentation
+- more tests
 
 
 ###### Widgets for M5
 
-- Label
-- Hyperlink
-- Radio
-- TextArea
-- Button (test avec dialog -> browse button with fileselector /!\ cycle de vie)
+- label
+- hyperlink
+- radio
+- textArea
+- button (test with dialogs -> browse button with fileselector /!\ lifecycle)
 
 
 ##### M6 26/03/16 (API freeze) +8
 
-- Dialog et wizard implem
-- Validation
-  - Message and kind on widgets, groups, view ([message manager](https://www.eclipse.org/eclipse/platform-ua/proposals/forms/enhancements-3.3/))
-  - Markers and Problems view
-- Styling
-  - Font
-  - Colors (background, foreground)
-  - Conditional style
-  - Label (bold, italic, underline, strikethrough etc)
-- widgets ++
-- Doc technique
-- Tests
+###### Dialogs and wizards
+
+Implementation of the dialogs et wizards
+
+###### Validation
+
+- Message and kind on widgets, groups, view ([message manager](https://www.eclipse.org/eclipse/platform-ua/proposals/forms/enhancements-3.3/))
+- Markers and Problems view
+
+###### Styling
+
+- Font
+- Colors (background, foreground)
+- Conditional style
+- Label (bold, italic, underline, strikethrough etc)
+
+###### Release engineering and project management
+
+- technical documentation
+- more tests
 
 ###### Widgets for M6
 
@@ -126,24 +153,36 @@ We need to have a clear vision of the way the lifecycle of our application works
 
 ##### M7 06/05/16 +6
 
-- Raffiner le DSL de description(Reuse, import, autre tooling), 
-- performances/montée en charge, 
-- layout
-- widgets ++
-- Doc technique
-- Tests
-- Documentation utilisateur
+###### Tooling
 
+- advanced features in properties.ecore
+  - reuse / import
+  - new tooling
+
+###### Performances
+
+- performance and scaling (fix everything!)
+
+###### Layout
+
+- grid layout with containers?
+
+###### Release engineering and project management
+
+- technical documentation
+- user documentation
+- more tests
 
 ##### RC1 20/05/16
 
 ##### Eclipse Neon 1
 
-- Quickfixes
+- quickfixes
 - content assist
 
 ##### Eclipse Neon 2
 
+- sleep
 
 ##### Eclipse Omega
 
