@@ -6,33 +6,65 @@ description: Roadmap
 
 ##### M4 11/12/15 +4
 
-demo industrialisée avec :
+The goal of this milestons is to build an industrialized demonstration.
 
-- text, checkbox, combo
-- context (viewpoint, representation, layer, filter, mapping, model explorer)
-  - model explorer ~> absence de contexte avec le bridge Sirius ?
-- Mode par défaut du DSL, surcharge de partie du comportement par défaut 
-  - Définition du comportement attendu
-  - Définition des règles par défaut (mise à jour du properties.ecore?)
-  - Définition du comportement attendu pour la surcharge (remplacement, position, ordre, génération dans le odesign ou pas)
-  - Définition d'exemples de surcharge
-  - Conservation ou suppression des autres onglets (GMF, Advanced, Semantic)
-  - Ordre des onglets
-- Doc technique
-- Tests + job
-- Releng : produire un update site consommable par sirius
-- API/étendre le DSL pour décrire des widget custom + converteur (y réfléchir)
-  - Définition dans le DSL (Comment ? Migration avec évolution de properties.ecore ?)
-  - API Java
-  - Exemple avec color picker
+###### Mappings
 
-Cycle de vie clair et maitrisé :
+- text
+  - lifecycle (edit initial operation / valueExpression)
+- checkbox
+- combo
+- semantic candidate (pages / groups / widgets)
+- dynamic mappings
+  - for iterator in collectionExpression (domainClass.eAllStructuralFeatures) -> switch switchExpression -> case valueExpression
+- context 
+  - viewpoint, representation, layer, filter, mapping
+  - model explorer ~> lack of context with the Eclipse Sirius bridge
 
-- prendre en compte la validation
+###### Interpreters
+
+- new interpreter API in sirius
+  - variables lifecycle (remove setVariables / unsetVariables)
+  - completion proposals (EMF 2.8's styled strings for the display and information)
+  - camel case support and filters for the interpreters and proposals
+- usage of expression.ecore
+
+###### Default behavior and customization
+
+- default behavior of properties.ecore (if the user does not specify anything) and overriding of the default behavior
+  - definition of the default behavior expected (each structural should have a default widget in the order of the structural features)
+  - definition of the default rules in a default.properties
+  - definition of the behavior expected to change the default behavior
+    - replacement
+    - position
+    - order
+    - should we generate anything in the odesign of the specifier?
+  - create some examples
+  - how can we keep / remove other tabs provided by other tools (GMF, Advanced, Semantic)
+  - tab order
+- API to extend properties.ecore with custom widgets (convertion in eef.ecore)
+  - how to define a custom widget in properties.ecore
+  - how to make this definition evolve with the future changes in properties.ecore (regenerate the code, etc)
+  - Java API
+  - Example with a color picker
+
+###### Lifecycle
+
+We need to have a clear vision of the way the lifecycle of our application works
+
+- lifecycle to create the Properties view
+- lifecycle of the interaction with Eclipse Sirius
+- take into account the validation
 - read only
-- Se renseigner sur les possibilités de SWT d'un point de vue montée en charge / perf / dynamicité
+- evaluate the performances and capabilities of SWT
+  - ability to create and destroy widgets (hide them?)
+  - scaling (how many widgets? are pages not displayed refreshed?)
 
-expression.ecore & API interpreter dans sirius
+###### Release engineering and project management
+
+- Technical documentation
+- Unit tests, continuous integration and integration with Gerrit
+- Contribute to the EEF update site for Eclipse Sirius
 
 ###### Widgets for M4
 
@@ -120,3 +152,4 @@ expression.ecore & API interpreter dans sirius
   - show advanced
   - restore default value
   - see related elements
+- lock
