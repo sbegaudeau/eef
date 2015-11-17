@@ -38,8 +38,7 @@ expression.ecore & API interpreter dans sirius
 
 - Dialog et wizard implem
 - Validation
-- Quickfixes, 
-- content assist, 
+- Styling
 - widgets ++
 - Doc technique
 - Tests
@@ -48,7 +47,8 @@ expression.ecore & API interpreter dans sirius
 
 - Raffiner le DSL de description( Reuse, import, autre tooling), 
 - performances/montée en charge, 
-- Styling, 
+- Quickfixes
+- content assist
 - layout
 - widgets ++
 - Doc technique
