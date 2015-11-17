@@ -5,7 +5,8 @@ description: Roadmap
 
 ##### M4 11/12/15 +4
 
-demo industrialisée avec : 
+demo industrialisée avec :
+
 - text, checkbox, combo
 - context (viewpoint, representation, layer, filter, mapping, model explorer)
 - Mode par défaut du DSL, surcharge de partie du comportement par défaut 
@@ -14,7 +15,8 @@ demo industrialisée avec :
 - Releng : produire un update site consommable par sirius
 - API/étendre le DSL pour décrire des widget custom + converteur (y réfléchir)
 
-Cycle de vie clair et maitrisé:
+Cycle de vie clair et maitrisé :
+
 - prendre en compte la validation
 - Se renseigner sur les possibilités de SWT d'un point de vue montée en charge / perf / dynamicité
 
