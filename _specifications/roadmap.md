@@ -22,9 +22,6 @@ The goal of this milestons is to build an industrialized demonstration.
 - combo **3d**
 - dynamic mappings **3d**
   - for iterator in collectionExpression (domainClass.eAllStructuralFeatures) -> switch switchExpression -> case valueExpression
-- context **10d**
-  - viewpoint, representation, layer, filter, mapping
-  - model explorer ~> lack of context with the Eclipse Sirius bridge
 
 ###### Interpreters
 
@@ -110,6 +107,9 @@ We need to specify how to integrate emf.edit. This work will be realized by the 
   - should we generate anything in the odesign of the specifier?
   - create some example
   - implementation of the overriding **10d**
+- context **10d**
+  - viewpoint, representation, layer, filter, mapping
+  - model explorer ~> lack of context with the Eclipse Sirius bridge
 
 ###### Interpreters
 
