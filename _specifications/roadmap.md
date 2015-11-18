@@ -68,18 +68,6 @@ We need to evaluate how we can create dialogs & wizards
 - undo / cancel (best practices)
 - UI thread / jobs interactions
 
-###### EMF Edit **7d**
-
-We need to specify how to integrate emf.edit. This work will be realized by the Sirius team.
-
-- label provider
-- choice of value
-- diagnostician (message, feature, context, etc)
-- EDataType validation (see [this](http://eclipsesource.com/blogs/2014/08/26/emf-validation-for-datatype-constraints/))
-- eSet / eGet
-- evaluation of the usage I18N form Sirius in eef (fallback to EMF.edit by default)
-- update of the default behavior to use EMF Edit
-
 ###### Widgets
 
 - checkbox **2d**
@@ -91,18 +79,6 @@ We need to specify how to integrate emf.edit. This work will be realized by the 
   - find its new name :)
   - definition in properties.ecore
   - implementation
-- support for multi selection **15d**
-  - evaluate the need for this feature and its behavior (what should we display)
-  - 1st prototype and final implementation in M6
-
-**TO RESCHEDULE ???**
-- specification of the behavior expected to override the default behavior **2d**
-  - replacement
-  - position
-  - order
-  - should we generate anything in the odesign of the specifier?
-  - create some example
-  - implementation of the overriding **10d**
 
 - context **10d**
   - viewpoint, representation, layer, filter, mapping
@@ -136,6 +112,28 @@ We need to specify how to integrate emf.edit. This work will be realized by the 
 
 
 ##### M6 26/03/16 (API freeze) +8
+
+
+###### EMF Edit **7d**
+
+We need to specify how to integrate emf.edit. This work will be realized by the Sirius team.
+
+- label provider
+- choice of value
+- diagnostician (message, feature, context, etc)
+- EDataType validation (see [this](http://eclipsesource.com/blogs/2014/08/26/emf-validation-for-datatype-constraints/))
+- eSet / eGet
+- evaluation of the usage I18N form Sirius in eef (fallback to EMF.edit by default)
+- update of the default behavior to use EMF Edit
+
+###### Behavior
+- specification of the behavior expected to override the default behavior **2d**
+  - replacement
+  - position
+  - order
+  - should we generate anything in the odesign of the specifier?
+  - create some example
+  - implementation of the overriding **10d**
 
 ###### Dialogs and wizards **20d** **TO RESCHEDULE ???**
 
@@ -208,3 +206,6 @@ Support for styling **10d**
   - restore default value
   - see related elements
 - lock
+- support for multi selection **15d**
+  - evaluate the need for this feature and its behavior (what should we display)
+  - 1st prototype and final implementation in M6
