@@ -45,8 +45,7 @@ This work will be realized by the Sirius team.
     - position
     - order
     - should we generate anything in the odesign of the specifier?
-    - create some examples
-  - implementation of the overriding **10d**
+    - create some example
   - how can we keep / remove other tabs provided by other tools (GMF, Advanced, Semantic) **2d**
   - tab order **2d**
 - API to extend properties.ecore with custom widgets (convertion in eef.ecore)
@@ -110,6 +109,7 @@ We need to specify how to integrate emf.edit. This work will be realized by the 
 - support for multi selection **15d**
   - evaluate the need for this feature and its behavior (what should we display)
   - 1st prototype and final implementation in M6
+- implementation of the overriding **10d**
 
 ###### Interpreters
 
