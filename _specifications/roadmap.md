@@ -8,11 +8,11 @@ description: Roadmap
 
 The goal of this milestons is to build an industrialized demonstration.
 
-###### DSLs **2d**
+###### DSLs
 
 - remove unnecessary concepts from eef.ecore (domain class?) **2d**
 
-###### Widgets **22d**
+###### Widgets
 
 - semantic candidate (pages / groups / widgets) **1d**
 - text
@@ -26,7 +26,7 @@ The goal of this milestons is to build an industrialized demonstration.
   - viewpoint, representation, layer, filter, mapping
   - model explorer ~> lack of context with the Eclipse Sirius bridge
 
-###### Interpreters **17d**
+###### Interpreters
 
 This work will be realized by the Sirius team.
 
@@ -34,9 +34,8 @@ This work will be realized by the Sirius team.
   - variables lifecycle (remove setVariables / unsetVariables)
   - completion proposals (EMF 2.8's styled strings for the display and information)
   - camel case support and filters for the interpreters and proposals
-- usage of expression.ecore **15d**
 
-###### Default behavior and customization **24d**
+###### Default behavior and customization
 
 - default behavior of properties.ecore and overriding of the default behavior
   - definition of the default behavior expected (each structural should have a default widget in the order of the structural features)
@@ -56,7 +55,7 @@ This work will be realized by the Sirius team.
   - java API **2d**
   - very basic prototype with a color picker **2d**
 
-###### Lifecycle **7d**
+###### Lifecycle
 
 We need to have a clear vision of the way the lifecycle of our application works
 
@@ -68,7 +67,7 @@ We need to have a clear vision of the way the lifecycle of our application works
   - ability to create and destroy widgets (hide them?)
   - scaling (how many widgets? are pages not displayed refreshed?)
 
-###### Release engineering and project management **4d**
+###### Release engineering and project management
 
 - technical documentation **2d**
 - unit tests, continuous integration and integration with Gerrit **2d**
@@ -79,8 +78,6 @@ We need to have a clear vision of the way the lifecycle of our application works
 - text
 - checkbox
 - combo
-
-**Expected cost: 76d**
 
 ##### M5 29/01/16 +7
 
@@ -114,6 +111,10 @@ We need to specify how to integrate emf.edit. This work will be realized by the 
   - evaluate the need for this feature and its behavior (what should we display)
   - 1st prototype and final implementation in M6
 
+###### Interpreters
+
+- usage of expression.ecore **15d**
+
 ###### Release engineering and project management **4d**
 
 - technical documentation
@@ -127,8 +128,6 @@ We need to specify how to integrate emf.edit. This work will be realized by the 
 - textArea **1d**
 - button (test with dialogs -> browse button with fileselector /!\ lifecycle) **3d**
 
-**Expected cost: 58d**
-
 
 ##### M6 26/03/16 (API freeze) +8
 
@@ -141,7 +140,7 @@ Implementation of the dialogs et wizards
 - Message and kind on widgets, groups, view ([message manager](https://www.eclipse.org/eclipse/platform-ua/proposals/forms/enhancements-3.3/))
 - Markers and Problems view
 
-###### Styling **15d**
+###### Styling
 
 Support for styling **10d**
 
@@ -155,14 +154,11 @@ Support for styling **10d**
 - technical documentation
 - more tests
 
-###### Widgets for M6 **35d**
+###### Widgets for M6
 
 - Tree **15d**
 - Table **20d**
   - actions: appearance and behavior (add, remove, up, down)
-
-
-**Expected cost: 80d**
 
 ##### M7 06/05/16 +6
 
@@ -186,7 +182,6 @@ Support for styling **10d**
 - user documentation
 - more tests
 
-**Expected cost: 32d**
 
 ##### RC1 20/05/16
 
