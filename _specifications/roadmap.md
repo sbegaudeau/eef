@@ -96,12 +96,18 @@ We need to have a clear vision of the way the lifecycle of our application works
 
 ##### M6 26/03/16 (API freeze) +8 65d
 
+
+###### Feedback
+
+Fix and improvements **10d**
+
 ###### Widget
 
-- creation of a complex widget (link eref viewer) **10d**
-  - find its new name :)
-  - definition in properties.ecore
-  - implementation
+- API to extend properties.ecore with custom widgets (convertion in eef.ecore)
+  - how to define a custom widget in properties.ecore **2d**
+  - how to make this definition evolve with the future changes in properties.ecore (regenerate the code, etc) **1d**
+  - java API **2d**
+  - very basic prototype with a color picker **2d**
 
 ###### EMF Edit **7d**
 
@@ -139,6 +145,10 @@ Implementation of the styling **20d**
 - more tests
 
 ##### M7 06/05/16 +6 50d
+
+###### Feedback
+
+Fix and improvements **20d**
 
 ###### Tooling **15d**
 
@@ -206,8 +216,9 @@ Implementation of the dialogs et wizards
   - evaluate the need for this feature and its behavior (what should we display)
   - 1st prototype and final implementation in M6
 
-- API to extend properties.ecore with custom widgets (convertion in eef.ecore)
-  - how to define a custom widget in properties.ecore **2d**
-  - how to make this definition evolve with the future changes in properties.ecore (regenerate the code, etc) **1d**
-  - java API **2d**
-  - very basic prototype with a color picker **2d**
+- creation of a complex widget (link eref viewer) **10d**
+  - find its new name :)
+  - definition in properties.ecore
+  - implementation
+
+
