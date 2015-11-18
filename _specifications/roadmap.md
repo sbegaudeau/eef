@@ -61,13 +61,6 @@ We need to have a clear vision of the way the lifecycle of our application works
 
 ##### M5 29/01/16 +7
 
-###### Dialogs and wizards **10d** **TO RESCHEDULE ???**
-
-We need to evaluate how we can create dialogs & wizards
-
-- undo / cancel (best practices)
-- UI thread / jobs interactions
-
 ###### Widgets
 
 - checkbox **2d**
@@ -84,7 +77,6 @@ We need to evaluate how we can create dialogs & wizards
   - viewpoint, representation, layer, filter, mapping
   - model explorer ~> lack of context with the Eclipse Sirius bridge
 
-**TO RESCHEDULE ???**
 - tab order **2d**
 
 - API to extend properties.ecore with custom widgets (convertion in eef.ecore)
@@ -93,9 +85,12 @@ We need to evaluate how we can create dialogs & wizards
   - java API **2d**
   - very basic prototype with a color picker **2d**
 
-###### Interpreters
+###### Specification of the styling **10d**
 
-- usage of expression.ecore **15d**
+- Font
+- Colors (background, foreground)
+- Label (bold, italic, underline, strikethrough etc)
+- Conditional style
 
 ###### Release engineering and project management **4d**
 
@@ -112,7 +107,6 @@ We need to evaluate how we can create dialogs & wizards
 
 
 ##### M6 26/03/16 (API freeze) +8
-
 
 ###### EMF Edit **7d**
 
@@ -135,23 +129,14 @@ We need to specify how to integrate emf.edit. This work will be realized by the 
   - create some example
   - implementation of the overriding **10d**
 
-###### Dialogs and wizards **20d** **TO RESCHEDULE ???**
-
-Implementation of the dialogs et wizards
-
 ###### Validation and messages **15d**
 
 - Message and kind on widgets, groups, view ([message manager](https://www.eclipse.org/eclipse/platform-ua/proposals/forms/enhancements-3.3/))
 - Markers and Problems view
 
-###### Styling **TO RESCHEDULE ???**
+###### Styling
 
-Support for styling **10d**
-
-- Font
-- Colors (background, foreground)
-- Label (bold, italic, underline, strikethrough etc)
-- Conditional style **5d**
+Implementation of the styling **20d**
 
 ###### Release engineering and project management **5d**
 
@@ -194,9 +179,25 @@ Support for styling **10d**
 - quickfixes
 - content assist
 
+###### Interpreters
+
+- usage of expression.ecore **15d**
+
 ##### Eclipse Neon 2
 
 - sleep
+
+###### Dialogs and wizards **10d**
+
+We need to evaluate how we can create dialogs & wizards
+
+- undo / cancel (best practices)
+- UI thread / jobs interactions
+
+
+###### Dialogs and wizards **20d**
+
+Implementation of the dialogs et wizards
 
 ##### Eclipse Omega
 
