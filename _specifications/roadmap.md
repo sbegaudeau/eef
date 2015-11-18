@@ -38,12 +38,6 @@ This work will be realized by the Sirius team.
   - definition of the default behavior expected (each structural should have a default widget in the order of the structural features)
   - definition of the default rules in a default.properties **1d**
 - how can we keep / remove other tabs provided by other tools (GMF, Advanced, Semantic) **2d**
-- tab order **2d**
-- API to extend properties.ecore with custom widgets (convertion in eef.ecore)
-  - how to define a custom widget in properties.ecore **2d**
-  - how to make this definition evolve with the future changes in properties.ecore (regenerate the code, etc) **1d**
-  - java API **2d**
-  - very basic prototype with a color picker **2d**
 
 ###### Lifecycle
 
@@ -110,6 +104,12 @@ We need to specify how to integrate emf.edit. This work will be realized by the 
 - context **10d**
   - viewpoint, representation, layer, filter, mapping
   - model explorer ~> lack of context with the Eclipse Sirius bridge
+- tab order **2d**
+- API to extend properties.ecore with custom widgets (convertion in eef.ecore)
+  - how to define a custom widget in properties.ecore **2d**
+  - how to make this definition evolve with the future changes in properties.ecore (regenerate the code, etc) **1d**
+  - java API **2d**
+  - very basic prototype with a color picker **2d**
 
 ###### Interpreters
 
