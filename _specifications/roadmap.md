@@ -4,7 +4,7 @@ description: Roadmap
 ---
 
 
-##### M4 11/12/15 +4
+##### M4 11/12/15 +4 30d
 
 The goal of this milestons is to build an industrialized demonstration.
 
@@ -59,7 +59,7 @@ We need to have a clear vision of the way the lifecycle of our application works
 - checkbox
 - combo
 
-##### M5 29/01/16 +7
+##### M5 29/01/16 +7 50d
 
 ###### Widgets
 
@@ -106,7 +106,7 @@ We need to have a clear vision of the way the lifecycle of our application works
 - button (test with dialogs -> browse button with fileselector /!\ lifecycle) **3d**
 
 
-##### M6 26/03/16 (API freeze) +8
+##### M6 26/03/16 (API freeze) +8 65d
 
 ###### EMF Edit **7d**
 
@@ -149,7 +149,7 @@ Implementation of the styling **20d**
 - Table **20d**
   - actions: appearance and behavior (add, remove, up, down)
 
-##### M7 06/05/16 +6
+##### M7 06/05/16 +6 50d
 
 ###### Tooling **15d** **TO RESCHEDULE ???**
 
