@@ -65,6 +65,11 @@ We need to have a clear vision of the way the lifecycle of our application works
 
 - checkbox **2d**
 - combo **3d**
+- label **2d**
+- radio **2d**
+- textArea **1d**
+- button (test with dialogs -> browse button with fileselector /!\ lifecycle) **3d**
+
 - dynamic mappings **3d**
   - for iterator in collectionExpression (domainClass.eAllStructuralFeatures) -> switch switchExpression -> case valueExpression
 - final implementation of the custom widget (color picker) **1d**
@@ -87,13 +92,6 @@ We need to have a clear vision of the way the lifecycle of our application works
 
 - technical documentation
 - more tests
-
-###### Widgets for M5
-
-- label **2d**
-- radio **2d**
-- textArea **1d**
-- button (test with dialogs -> browse button with fileselector /!\ lifecycle) **3d**
 
 
 ##### M6 26/03/16 (API freeze) +8 65d
