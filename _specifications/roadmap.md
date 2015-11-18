@@ -4,7 +4,7 @@ description: Roadmap
 ---
 
 
-##### M4 11/12/15 +4 30d
+##### M4 11/12/15 availability 4 weeks or 30 days (planning 24 days)
 
 The goal of this milestons is to build an industrialized demonstration.
 
@@ -57,13 +57,8 @@ Specification with the Sirius team **2d**
 - unit tests, continuous integration and integration with Gerrit **2d**
 - contribute to the EEF update site for Eclipse Sirius
 
-###### Widgets for M4
 
-- text
-- checkbox
-- combo
-
-##### M5 29/01/16 +7 50d
+##### M5 29/01/16 availability 7 weeks or 50 days (planning 45 days)
 
 ###### Widgets
 
@@ -101,7 +96,7 @@ Feedback and improvement with the Sirius team **2d**
 - more tests
 
 
-##### M6 26/03/16 (API freeze) +8 65d
+##### M6 26/03/16 (API freeze) availability 8 weeks or 65 days (planning 57 days)
 
 
 ###### Feedback
@@ -144,7 +139,7 @@ Implementation of the styling **20d**
 - technical documentation
 - more tests
 
-##### M7 06/05/16 +6 50d
+##### M7 06/05/16 availability 6 weeks or 50 days (planning 52 days)
 
 ###### Feedback
 
