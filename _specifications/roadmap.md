@@ -124,7 +124,7 @@ We need to specify how to integrate emf.edit. This work will be realized by the 
   - create some example
   - implementation of the overriding **10d**
 
-###### Validation and messages **15d**
+###### Validation and messages **10d**
 
 - Message and kind on widgets, groups, view ([message manager](https://www.eclipse.org/eclipse/platform-ua/proposals/forms/enhancements-3.3/))
 - Markers and Problems view
@@ -138,15 +138,9 @@ Implementation of the styling **20d**
 - technical documentation
 - more tests
 
-###### Widgets for M6 **TO RESCHEDULE ???**
-
-- Tree **15d**
-- Table **20d**
-  - actions: appearance and behavior (add, remove, up, down)
-
 ##### M7 06/05/16 +6 50d
 
-###### Tooling **15d** **TO RESCHEDULE ???**
+###### Tooling **15d**
 
 - advanced features in properties.ecore
   - reuse / import
@@ -195,6 +189,10 @@ We need to evaluate how we can create dialogs & wizards
 Implementation of the dialogs et wizards
 
 ##### Eclipse Omega
+
+- Tree **15d**
+- Table **20d**
+  - actions: appearance and behavior (add, remove, up, down)
 
 - tooltip
 - actions on the view
