@@ -121,15 +121,6 @@ We need to specify how to integrate emf.edit. This work will be realized by the 
 - evaluation of the usage I18N form Sirius in eef (fallback to EMF.edit by default)
 - update of the default behavior to use EMF Edit
 
-###### Behavior
-- specification of the behavior expected to override the default behavior **2d**
-  - replacement
-  - position
-  - order
-  - should we generate anything in the odesign of the specifier?
-  - create some example
-  - implementation of the overriding **10d**
-
 ###### Validation and messages **10d**
 
 - Message and kind on widgets, groups, view ([message manager](https://www.eclipse.org/eclipse/platform-ua/proposals/forms/enhancements-3.3/))
@@ -181,6 +172,15 @@ Fix and improvements **20d**
 ###### Interpreters
 
 - usage of expression.ecore **15d**
+
+###### Behavior
+- specification of the behavior expected to override the default behavior **2d**
+  - replacement
+  - position
+  - order
+  - should we generate anything in the odesign of the specifier?
+  - create some example
+  - implementation of the overriding **10d**
 
 ##### Eclipse Neon 2
 
