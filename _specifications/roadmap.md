@@ -19,12 +19,13 @@ The goal of this milestons is to build an industrialized demonstration.
   - lifecycle (edit initial operation / valueExpression) **1d**
   - refactor the controller and instantiation of the widgets **2d**
 
->>>>>>>>>>>>>>>>>>>>>>>>>>> TO RESCHEDULE ??? >>>>>>>>>>>>>>>>>>>>>>>>>>>>
+**TO RESCHEDULE ???**
+
 - checkbox **2d**
 - combo **3d**
 - dynamic mappings **3d**
   - for iterator in collectionExpression (domainClass.eAllStructuralFeatures) -> switch switchExpression -> case valueExpression
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 
 ###### Interpreters
 
@@ -68,14 +69,12 @@ We need to have a clear vision of the way the lifecycle of our application works
 
 ##### M5 29/01/16 +7
 
->>>>>>>>>>>>>>>>>>>>>>>>>>> TO RESCHEDULE ??? >>>>>>>>>>>>>>>>>>>>>>>>>>>>
-###### Dialogs and wizards **10d**
+###### Dialogs and wizards **10d** **TO RESCHEDULE ???**
 
 We need to evaluate how we can create dialogs & wizards
 
 - undo / cancel (best practices)
 - UI thread / jobs interactions
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 ###### EMF Edit **7d**
 
@@ -100,7 +99,7 @@ We need to specify how to integrate emf.edit. This work will be realized by the 
   - evaluate the need for this feature and its behavior (what should we display)
   - 1st prototype and final implementation in M6
 
->>>>>>>>>>>>>>>>>>>>>>>>>>> TO RESCHEDULE ??? >>>>>>>>>>>>>>>>>>>>>>>>>>>>
+**TO RESCHEDULE ???**
 - specification of the behavior expected to override the default behavior **2d**
   - replacement
   - position
@@ -108,15 +107,13 @@ We need to specify how to integrate emf.edit. This work will be realized by the 
   - should we generate anything in the odesign of the specifier?
   - create some example
   - implementation of the overriding **10d**
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 - context **10d**
   - viewpoint, representation, layer, filter, mapping
   - model explorer ~> lack of context with the Eclipse Sirius bridge
 
->>>>>>>>>>>>>>>>>>>>>>>>>>> TO RESCHEDULE ??? >>>>>>>>>>>>>>>>>>>>>>>>>>>>
+**TO RESCHEDULE ???**
 - tab order **2d**
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 - API to extend properties.ecore with custom widgets (convertion in eef.ecore)
   - how to define a custom widget in properties.ecore **2d**
@@ -144,19 +141,16 @@ We need to specify how to integrate emf.edit. This work will be realized by the 
 
 ##### M6 26/03/16 (API freeze) +8
 
->>>>>>>>>>>>>>>>>>>>>>>>>>> TO RESCHEDULE ??? >>>>>>>>>>>>>>>>>>>>>>>>>>>>
-###### Dialogs and wizards **20d**
+###### Dialogs and wizards **20d** **TO RESCHEDULE ???**
 
 Implementation of the dialogs et wizards
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 ###### Validation and messages **15d**
 
 - Message and kind on widgets, groups, view ([message manager](https://www.eclipse.org/eclipse/platform-ua/proposals/forms/enhancements-3.3/))
 - Markers and Problems view
 
->>>>>>>>>>>>>>>>>>>>>>>>>>> TO RESCHEDULE ??? >>>>>>>>>>>>>>>>>>>>>>>>>>>>
-###### Styling
+###### Styling **TO RESCHEDULE ???**
 
 Support for styling **10d**
 
@@ -164,31 +158,25 @@ Support for styling **10d**
 - Colors (background, foreground)
 - Label (bold, italic, underline, strikethrough etc)
 - Conditional style **5d**
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
 
 ###### Release engineering and project management **5d**
 
 - technical documentation
 - more tests
 
->>>>>>>>>>>>>>>>>>>>>>>>>>> TO RESCHEDULE ??? >>>>>>>>>>>>>>>>>>>>>>>>>>>>
-###### Widgets for M6
+###### Widgets for M6 **TO RESCHEDULE ???**
 
 - Tree **15d**
 - Table **20d**
   - actions: appearance and behavior (add, remove, up, down)
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 ##### M7 06/05/16 +6
 
->>>>>>>>>>>>>>>>>>>>>>>>>>> TO RESCHEDULE ??? >>>>>>>>>>>>>>>>>>>>>>>>>>>>
-###### Tooling **15d**
+###### Tooling **15d** **TO RESCHEDULE ???**
 
 - advanced features in properties.ecore
   - reuse / import
   - new tooling
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 ###### Performances **2d**
 
