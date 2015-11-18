@@ -47,6 +47,10 @@ We need to have a clear vision of the way the lifecycle of our application works
   - ability to create and destroy widgets (hide them?)
   - scaling (how many widgets? are pages not displayed refreshed?)
 
+###### EMF Edit
+
+Specification with the Sirius team **2d**
+
 ###### Release engineering and project management
 
 - technical documentation **2d**
@@ -80,6 +84,9 @@ We need to have a clear vision of the way the lifecycle of our application works
 
 - tab order **2d**
 
+###### EMF Edit
+
+Feedback and improvement with the Sirius team **2d**
 
 ###### Specification of the styling **10d**
 
@@ -109,9 +116,9 @@ Fix and improvements **10d**
   - java API **2d**
   - very basic prototype with a color picker **2d**
 
-###### EMF Edit **7d**
+###### EMF Edit
 
-We need to specify how to integrate emf.edit. This work will be realized by the Sirius team.
+Integration of the EMF Edit support created by the Sirius team **5d**
 
 - label provider
 - choice of value
@@ -121,7 +128,9 @@ We need to specify how to integrate emf.edit. This work will be realized by the 
 - evaluation of the usage I18N form Sirius in eef (fallback to EMF.edit by default)
 - update of the default behavior to use EMF Edit
 
-###### Validation and messages **10d**
+###### Validation and messages
+
+Development **10d**
 
 - Message and kind on widgets, groups, view ([message manager](https://www.eclipse.org/eclipse/platform-ua/proposals/forms/enhancements-3.3/))
 - Markers and Problems view
