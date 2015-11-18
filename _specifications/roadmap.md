@@ -37,17 +37,11 @@ This work will be realized by the Sirius team.
 
 ###### Default behavior and customization
 
-- default behavior of properties.ecore and overriding of the default behavior
+- default behavior of properties.ecore
   - definition of the default behavior expected (each structural should have a default widget in the order of the structural features)
   - definition of the default rules in a default.properties **1d**
-  - specification of the behavior expected to override the default behavior **2d**
-    - replacement
-    - position
-    - order
-    - should we generate anything in the odesign of the specifier?
-    - create some example
-  - how can we keep / remove other tabs provided by other tools (GMF, Advanced, Semantic) **2d**
-  - tab order **2d**
+- how can we keep / remove other tabs provided by other tools (GMF, Advanced, Semantic) **2d**
+- tab order **2d**
 - API to extend properties.ecore with custom widgets (convertion in eef.ecore)
   - how to define a custom widget in properties.ecore **2d**
   - how to make this definition evolve with the future changes in properties.ecore (regenerate the code, etc) **1d**
@@ -109,7 +103,13 @@ We need to specify how to integrate emf.edit. This work will be realized by the 
 - support for multi selection **15d**
   - evaluate the need for this feature and its behavior (what should we display)
   - 1st prototype and final implementation in M6
-- implementation of the overriding **10d**
+- specification of the behavior expected to override the default behavior **2d**
+  - replacement
+  - position
+  - order
+  - should we generate anything in the odesign of the specifier?
+  - create some example
+  - implementation of the overriding **10d**
 
 ###### Interpreters
 
