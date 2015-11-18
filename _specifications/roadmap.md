@@ -19,14 +19,6 @@ The goal of this milestons is to build an industrialized demonstration.
   - lifecycle (edit initial operation / valueExpression) **1d**
   - refactor the controller and instantiation of the widgets **2d**
 
-**TO RESCHEDULE ???**
-
-- checkbox **2d**
-- combo **3d**
-- dynamic mappings **3d**
-  - for iterator in collectionExpression (domainClass.eAllStructuralFeatures) -> switch switchExpression -> case valueExpression
-
-
 ###### Interpreters
 
 This work will be realized by the Sirius team.
@@ -90,6 +82,10 @@ We need to specify how to integrate emf.edit. This work will be realized by the 
 
 ###### Widgets
 
+- checkbox **2d**
+- combo **3d**
+- dynamic mappings **3d**
+  - for iterator in collectionExpression (domainClass.eAllStructuralFeatures) -> switch switchExpression -> case valueExpression
 - final implementation of the custom widget (color picker) **1d**
 - creation of a complex widget (link eref viewer) **10d**
   - find its new name :)
