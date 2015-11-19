@@ -213,8 +213,6 @@ Fix and improvements **20d**
 
 ##### Eclipse Neon 2
 
-- sleep
-
 ###### Dialogs and wizards **10d**
 
 We need to evaluate how we can create dialogs & wizards
