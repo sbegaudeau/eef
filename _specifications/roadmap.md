@@ -14,17 +14,25 @@ When the end user selects a diagram element in a Sirius based modeler, the prope
 ###### DSLs
 
 - remove unnecessary concepts from eef.ecore (domain class?) **2d**
+  - fresh start with a new eef.ecore and rename the old one (we won't have the generated code of the "old" one)
+  - only the concepts that can be useed from properties.ecore
 
 ###### Widgets
 
-- semantic candidate (pages / groups / widgets) **1d**
+- semantic candidate (pages / groups) **7d**
+  - change the "self" used for a Page, a Group, etc...
+    - see org.eclipse.eef.core.internal.EEFPageImpl.createControl()
+  - accessible variables for each expression? how to manage them?
+    - "IVariableManager" in a Sirius bundle named org.eclipse.sirius.common.query
 - text
   - lifecycle (edit initial operation / valueExpression) **1d**
+    - see org.eclipse.eef.ide.ui.internal.data.EEFSection.aboutToBeShown().new IConsumer() {...}.apply(String)
   - refactor the controller and instantiation of the widgets **2d**
+    - org.eclipse.eef.ide.ui.internal.data.EEFSection.createControls(Composite, TabbedPropertySheetPage)
 
 ###### Interpreters
 
-This work will be realized by the Sirius team.
+This work will be realized by the Sirius team in org.eclipse.sirius.common.query (and org.eclipse.sirius.common.query.ui?)
 
 - new interpreter API in sirius (specification and integration) **2d**
   - variables lifecycle (remove setVariables / unsetVariables)
@@ -80,6 +88,7 @@ The specifier can also define that a properties view is visible only when a Siri
 
 - dynamic mappings **3d**
   - for iterator in collectionExpression (domainClass.eAllStructuralFeatures) -> switch switchExpression -> case valueExpression
+- implementation of the default behavior **1d**
 - final implementation of the custom widget (color picker) **1d**
 
 - context **10d**
