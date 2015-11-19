@@ -4,7 +4,7 @@ description: Roadmap
 ---
 
 
-##### M4 11/12/15 availability 4 weeks or 30 days (planning 24 days)
+##### M4 11/12/15 availability 4 weeks or 30 days (planning 30 days)
 
 The goal of this milestone is to build an industrialized prototype.
 At the end of this milestone, we provide an update site for EEF and an update site for a specific Sirius version. 
