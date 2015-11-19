@@ -13,18 +13,23 @@ When the end user selects a diagram element in a Sirius based modeler, the prope
 
 ###### DSLs
 
-- remove unnecessary concepts from eef.ecore (domain class?) **2d**
-  - fresh start with a new eef.ecore and rename the old one (we won't have the generated code of the "old" one)
-  - only the concepts that can be useed from properties.ecore
+- Remove unnecessary concepts from `eef.ecore` (domain class?) **2d**
+  - fresh start with a new `eef.ecore` and rename the old one (we won't have the generated code of the "old" one)
+  - only keep the concepts that can be used from `properties.ecore`, and only the ones needed for the current milestone.
+- _Sirius_: add support for unknown/optional extensions in the VSM (in particular, under _Group_)
+  - use EMF's native mechanism (see http://ed-merks.blogspot.fr/2008/01/creating-children-you-didnt-know.html)
+  - take this opportunity to remove Sirius's legacy way of doing this and replace it with EMF's mechanism
 
 ###### Widgets
 
-- semantic candidate (pages / groups) **7d**
+- Add support for different semantic candidates (pages / groups) **7d** => PCD
   - change the "self" used for a Page, a Group, etc...
     - see org.eclipse.eef.core.internal.EEFPageImpl.createControl()
   - accessible variables for each expression? how to manage them?
-    - "IVariableManager" in a Sirius bundle named org.eclipse.sirius.common.query
-- text
+     - "IVariableManager" in a Sirius bundle named `org.eclipse.sirius.common.query`
+  - **depends on work on the Sirius side** (see below)
+   
+- Fully implement a simple _Text Field_ widget
   - lifecycle (edit initial operation / valueExpression) **1d**
     - see org.eclipse.eef.ide.ui.internal.data.EEFSection.aboutToBeShown().new IConsumer() {...}.apply(String)
   - refactor the controller and instantiation of the widgets **2d**
@@ -32,9 +37,10 @@ When the end user selects a diagram element in a Sirius based modeler, the prope
 
 ###### Interpreters
 
-This work will be realized by the Sirius team in org.eclipse.sirius.common.query (and org.eclipse.sirius.common.query.ui?)
-
-- new interpreter API in sirius (specification and integration) **2d**
+This work will be **realized by the Sirius team** in `oes.common.query.*`: **2d** => PCD
+- extract next-gen query API in new `org.eclipse.sirius.common.query` that do not depend on the rest of Sirius and can be used by EEF.
+- beside improvements made possible by a fresh start, the new version show take care to provide a good solution for variable scope management, and variables in general (to prepare for more complex features planned for later with expressions.ecore).
+- new interpreter API in sirius (specification and integration)
   - variables lifecycle (remove setVariables / unsetVariables)
   - completion proposals (EMF 2.8's styled strings for the display and information)
   - camel case support and filters for the interpreters and proposals
@@ -45,10 +51,11 @@ This work will be realized by the Sirius team in org.eclipse.sirius.common.query
   - definition of the default behavior expected (each structural should have a default widget in the order of the structural features)
   - definition of the default rules in a default.properties **1d**
 - how can we keep / remove other tabs provided by other tools (GMF, Advanced, Semantic) **2d**
+  - may **depend on work on the Sirius side**
 
 ###### Lifecycle
 
-We need to have a clear vision of the way the lifecycle of our application works
+We need to have a clear vision of the way the lifecycle of our application works. At the very least we should document the rules and constraints imposed by the Eclipse properties view framework. If possible we should hide some/most of the complexity under a simpler façade which isolates the rest of our work from the complexities and/or enforce the constraints.
 
 - lifecycle to create the Properties view **1d**
 - lifecycle of the interaction with Eclipse Sirius **2d**
@@ -57,17 +64,21 @@ We need to have a clear vision of the way the lifecycle of our application works
 - evaluate the performances and capabilities of SWT **2d**
   - ability to create and destroy widgets (hide them?)
   - scaling (how many widgets? are pages not displayed refreshed?)
+  - this may 
 
 ###### EMF Edit
 
 Specification with the Sirius team **2d**
+
+- identify the parts of EMF.Edit that make sense to expose more directly from the VSM (e.g. when configuring a _labelExpression_, it should be easy to say "use the label provider I've already customized for my metamodel")
+- prioritize which of these mechanisms will be needed earlier than others to be exploited by EEF
+- launch the corresponding work on the Sirius team
 
 ###### Release engineering and project management
 
 - technical documentation **2d**
 - unit tests, continuous integration and integration with Gerrit **2d**
 - contribute to the EEF update site for Eclipse Sirius
-
 
 ##### M5 29/01/16 availability 7 weeks or 50 days (planning 46 days)
 
