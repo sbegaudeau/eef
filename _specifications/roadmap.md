@@ -240,6 +240,7 @@ Implementation of the dialogs et wizards
   - see related elements
 
 - lock
+  - extract, refine and reuse the IPermissionAuthority from Eclipse Sirius
 
 - support for multi selection **15d**
   - evaluate the need for this feature and its behavior (what should we display)
