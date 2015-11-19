@@ -85,11 +85,11 @@ The specifier can also define that a properties view is visible only when a Siri
 - radio **2d**
 - textArea **1d**
 - button (test with dialogs -> browse button with fileselector /!\ lifecycle) **3d**
-
 - dynamic mappings **3d**
   - for iterator in collectionExpression (domainClass.eAllStructuralFeatures) -> switch switchExpression -> case valueExpression
 - implementation of the default behavior **1d**
-- final implementation of the custom widget (color picker) **1d**
+- implementation of a prototype of the custom widget (color picker) **1d**
+  - we will use this example to evaluate the API needed to support custom widgets
 
 - context **10d**
   - viewpoint, representation, layer, filter, mapping
@@ -128,11 +128,11 @@ Fix and improvements **10d**
 
 ###### Widget
 
-- API to extend properties.ecore with custom widgets (conversion in eef.ecore)
+- provisional API to extend properties.ecore with custom widgets (conversion in eef.ecore)
   - how to define a custom widget in properties.ecore **2d**
   - how to make this definition evolve with the future changes in properties.ecore (regenerate the code, etc) **1d**
-  - java API **2d**
-  - very basic prototype with a color picker **2d**
+  - provisional java API **2d**
+  - update of the color picker prototype **2d**
 
 ###### EMF Edit
 
