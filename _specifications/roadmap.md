@@ -69,7 +69,7 @@ Specification with the Sirius team **2d**
 - contribute to the EEF update site for Eclipse Sirius
 
 
-##### M5 29/01/16 availability 7 weeks or 50 days (planning 45 days)
+##### M5 29/01/16 availability 7 weeks or 50 days (planning 46 days)
 
 The goal of this milestone is to support basic widgets and dynamic mappings.
 At the end of this milestone, we provide some more basic widgets : Checkbox, Combo, Label, Radio, TextArea, Button.
