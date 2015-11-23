@@ -16,7 +16,7 @@ When the end user selects a diagram element in a Sirius based modeler, the prope
 - Remove unnecessary concepts from `eef.ecore` (domain class?) **2d**
   - fresh start with a new `eef.ecore` and rename the old one (we won't have the generated code of the "old" one)
   - only keep the concepts that can be used from `properties.ecore`, and only the ones needed for the current milestone.
-- _Sirius_: add support for unknown/optional extensions in the VSM (in particular, under _Group_)
+- _Sirius_: add support for unknown/optional extensions in the VSM (in particular, under _Group_) [*done*](https://git.eclipse.org/r/#/c/61001/)
   - use EMF's native mechanism (see http://ed-merks.blogspot.fr/2008/01/creating-children-you-didnt-know.html)
   - take this opportunity to remove Sirius's legacy way of doing this and replace it with EMF's mechanism
 
