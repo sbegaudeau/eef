@@ -68,7 +68,7 @@ We need to have a clear vision of the way the lifecycle of our application works
 
 ###### EMF Edit (see https://bugs.eclipse.org/bugs/show_bug.cgi?id=482831)
 
-Specification with the Sirius team **2d**
+[Specification](http://sbegaudeau.github.io/eef/specifications/emf-integration.html) with the Sirius team **2d**
 
 - identify the parts of EMF.Edit that make sense to expose more directly from the VSM (e.g. when configuring a _labelExpression_, it should be easy to say "use the label provider I've already customized for my metamodel")
 - prioritize which of these mechanisms will be needed earlier than others to be exploited by EEF
