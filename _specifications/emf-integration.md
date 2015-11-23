@@ -56,8 +56,6 @@ In the properties view description, when the specifier creates a *combo* or a *r
 
 ##### US-4 As a Sirius specifier, Zoe wants to leverage the validation rules already defined using EMF
 
-###### Validation
-
 EMF edit provides a diagnostician. By default Sirius use the EMF Edit validation when a validation is launched.
 The diagnostician provides the error level and message associated to a model validation issue.
 Our purpose is to be able to attach the validation error message to a specific widget description.
@@ -68,11 +66,17 @@ The validation should be called by edit tools.
 
 Sirius should support also by default EDataType validation (see [this](http://eclipsesource.com/blogs/2014/08/26/emf-validation-for-datatype-constraints/)).
 
+##### US-5 As a Sirius specifier, Zoe wants to leverage the element creation specified in her item providers
+
+When the specifier defines a new *Create Instance*, by default Sirius will call the *createAddCommand* defined in the item providers.
+
+##### US-6 As a Sirius specifier, Zoe wants to leverage the element setter specified in her item providers
+
+When the specifier defines a new *Set*, by default Sirius will call the *createSetCommand* defined in the item providers.
+
+##### US-7 As a Sirius specifier, Zoe wants to leverage the element deletion specified in her item providers
+
+When the specifier defines a new *Remove*, by default Sirius will call the *createDeleteCommand* defined in the item providers.
+
 TODO
 /!\ Adapter factory
-
-
-
-
-
-
