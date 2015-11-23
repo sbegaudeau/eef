@@ -6,8 +6,9 @@ description: EMF Integration
 The purpose of this page is to specify how Sirius can support by default some features provided by EMF Edit.
 EMF Edit generates item providers. The Ecore specifier can modify the default generated behavior of the item providers. Our purpose is to ease the integration and usage of EMF Edit in the VSM.
 
-
 The following user stories will help us define how we want to integrate Eclipse EEF 2.0 with EMF.
+
+See [#482831](https://bugs.eclipse.org/bugs/show_bug.cgi?id=482831 "482831") on the Sirius Bugzilla.
 
 ##### US-1 As a Sirius specifier, Zoe wants to leverage the label provider specified in her item providers
 
