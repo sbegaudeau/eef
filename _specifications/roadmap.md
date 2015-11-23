@@ -66,7 +66,7 @@ We need to have a clear vision of the way the lifecycle of our application works
   - scaling (how many widgets? are pages not displayed refreshed?)
   - this may 
 
-###### EMF Edit
+###### EMF Edit (see https://bugs.eclipse.org/bugs/show_bug.cgi?id=482831)
 
 Specification with the Sirius team **2d**
 
@@ -108,7 +108,7 @@ The specifier can also define that a properties view is visible only when a Siri
 
 - tab order **2d**
 
-###### EMF Edit
+###### EMF Edit (see https://bugs.eclipse.org/bugs/show_bug.cgi?id=482831)
 
 Feedback and improvement with the Sirius team **2d**
 
@@ -145,7 +145,7 @@ Fix and improvements **10d**
   - provisional java API **2d**
   - update of the color picker prototype **2d**
 
-###### EMF Edit
+###### EMF Edit (see https://bugs.eclipse.org/bugs/show_bug.cgi?id=482831)
 
 Integration of the EMF Edit support created by the Sirius team **5d**
 
