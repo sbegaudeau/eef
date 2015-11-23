@@ -2,10 +2,77 @@
 layout: specification
 description: EMF Integration
 ---
-The following user stories will help us define how we want to integrate Eclipse EEF 2.0 with EMF
 
-##### User stories
+The purpose of this page is to specify how Sirius can support by default some features provided by EMF Edit.
+EMF Edit generates item providers. The Ecore specifier can modify the default generated behavior of the item providers. Our purpose is to ease the integration and usage of EMF Edit in the VSM.
 
-###### US-1 As a Sirius specifier, Zoe wants to leverage the validation rules already defined using EMF
 
-###### US-2 As a Sirius specifier, Zoe wants to leverage the choice of values specified in her item providers
+The following user stories will help us define how we want to integrate Eclipse EEF 2.0 with EMF.
+
+##### US-1 As a Sirius specifier, Zoe wants to leverage the label provider specified in her item providers
+
+###### Label expression on style
+
+On a mapping, the Sirius specifier needs to set the *Label Expression*. By default in Sirius this expression is set to *feature:name*.
+To support by default, EMF edit, this expression should be set by default to *aql:self.getLabel()* with :
+
+- *self* represents the semantic element associated to the mapping.
+- *getLabel()* is a new service in AQL which calls accordingly to the EObject type the associated *XXXItemProvider#getText(Object object)* method.
+
+In the properties view description *properties.ecore*, each *Label Expression* will also be set by default to *aql:self.getLabel()*.
+
+###### Direct edit tool
+
+For complex edit tools, the specifier usually needs to call Java services from the *Input Label Expression* or under the *Initial Operation*. In this cases, the *getLabel* method should be also easily accessible from the Java services.
+
+To create a direct edit tool, the specifier needs to get the structural features which must be updated. Sirius should provide another method *getLabelFeature()* to be able to get easily the feature associated to the label. Then the specifier can create an edit tool as following :
+Begin
+-> Set
+--> Feature Name : *aql:self.getLabelFeature()*
+--> Value Expression : *newValue*
+
+*aql:self.getLabelFeature()* might be the default value set by Sirius when a new direct edit tool is created. 
+
+Today in the VSM, the *feature name* is not an interpreted expression.
+
+
+##### US-2 As a Sirius specifier, Zoe wants to leverage the image provider specified in her item providers
+
+The specifier can define *Workspace Image* style for a mapping, he must specify a *Workspace Path* to find the associated image.
+This field in the VSM should be an interpreted expression with a default value equals to *aql:self.getImage()*.
+
+The *getImage* service should call accordingly to the EObject type the associated *XXXItemProvider#getImage(Object object)* method.
+/!\ The *XXXItemProvider#getImage* method returns any kind of Object.
+
+It should be possible also to use the *getImage* service from the *Icon Path* field of a container or node style. In this case this field should be also an interpreted expression.
+
+This *getImage* service might be used also from the properties view description on a style to get the icon path associated to a widget description.
+
+##### US-3 As a Sirius specifier, Zoe wants to leverage the choice of values specified in her item providers
+
+When the specifier defines an unsynchronized diagram, he usually needs to create an "Add existing elements" or "Add related elements" tools. To create this kind of tools, it could be interesting to use a new AQL service *getChoiceOfValues* which returns the choice of values defined in EMF Edit.
+
+In the properties view description, when the specifier creates a *combo* or a *radio* widget, the *candidatesExpression* will be set to *aql:self.getChoiceOfValues()*  by default.
+
+##### US-4 As a Sirius specifier, Zoe wants to leverage the validation rules already defined using EMF
+
+###### Validation
+
+EMF edit provides a diagnostician. By default Sirius use the EMF Edit validation when a validation is launched.
+The diagnostician provides the error level and message associated to a model validation issue.
+Our purpose is to be able to attach the validation error message to a specific widget description.
+
+As the widgets are not directly associated to structural features but with interpreted expression, how do we attached the validation issues to specific widgets ?
+
+The validation should be called by edit tools.
+
+Sirius should support also by default EDataType validation (see [this](http://eclipsesource.com/blogs/2014/08/26/emf-validation-for-datatype-constraints/)).
+
+TODO
+/!\ Adapter factory
+
+
+
+
+
+
