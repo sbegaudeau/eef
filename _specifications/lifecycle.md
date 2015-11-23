@@ -8,6 +8,10 @@ The lifecycle of the Properties view can be separated in deferent parts
 
 The first step of the lifecycle of the TabbedProperties view is the retrieval of the ITabDescriptors. Those descriptors will be computed by EEF from a description of the view (EEFViewDescription) given to the EEF runtime. The tab descriptors will contain various section descripitors which will be used to create the various sections of a tab. Those descriptors can be computed using the current selection along with the current workbench part.
 
+The computation of the ITabDescriptiors and the ISectionDescriptors will be realized thanks to the EEFViewFactory and the EEFTabDescriptor. For that, the EEFViewFactory will create a new EEFView and initialize it. This initialization will use the semanticCandidateExpression, the interpreters and the various variables available in order to compute the various pages and groups used. 
+
+The business layer managing the widgets that are contained in the groups will not be instantiated during this step (see creation of the controls).
+
 ##### Instantiation of the ISection
 
 The TabbedProperties view framework will then use the ISectionDescriptors to instantiate the various ISections to use. Those sections will "directly" manipulate user interface concepts. Once instantiated, those ISections do not have access to the input yet but they are parameterized by the ISectionDescriptor of their section (which can have access to the EEF description).
