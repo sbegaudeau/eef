@@ -36,6 +36,14 @@ Begin
 
 Today in the VSM, the *feature name* is not an interpreted expression.
 
+###### Style text
+
+Sirius should support the EMF styled text by providing a *getStyledLabel()* service which calls the getStyledText method of the item providers.
+
+###### Color provider
+
+It should be possible to reuse the *Item Color Provider*, and Sirius should provide *getForeground()* and *getBackground()* services.
+For example, by default when the specifier creates a new Text widget Style, the foreground expression will be set to *aql:self.getForeground()*.
 
 ##### US-2 As a Sirius specifier, Zoe wants to leverage the image provider specified in her item providers
 
@@ -62,8 +70,10 @@ The diagnostician provides the error level and message associated to a model val
 Our purpose is to be able to attach the validation error message to a specific widget description.
 
 As the widgets are not directly associated to structural features but with interpreted expression, how do we attached the validation issues to specific widgets ?
+By default, EEF will show the validation issue at the top of the page.
+In order to attach the validation messages on a widget, the specifier will need to specify a validation expression which filters the diagnostician result.
 
-The validation should be called by edit tools.
+The validation should be called by the edit tools.
 
 Sirius should support also by default EDataType validation (see [this](http://eclipsesource.com/blogs/2014/08/26/emf-validation-for-datatype-constraints/)).
 
@@ -79,5 +89,6 @@ When the specifier defines a new *Set*, by default Sirius will call the *createS
 
 When the specifier defines a new *Remove*, by default Sirius will call the *createDeleteCommand* defined in the item providers.
 
-TODO
-/!\ Adapter factory
+##### US-8 As a Sirius specifier, Zoe wants to leverage the element move specified in her item providers
+
+When the specifier defines a new *Move*, by default Sirius will call the *createMoveCommand* defined in the item providers.
