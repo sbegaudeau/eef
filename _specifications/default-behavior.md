@@ -5,7 +5,7 @@ description: Default behavior
 
 ##### Default behavior of properties.ecore
 
-By default if no properties view description is provided, Sirius creates one properties view tab named *General*. 
+By default if no properties view description is provided, EEF creates one properties view tab named *General*. 
 
 One section per semantic element associated to the selection will be also created.
 
