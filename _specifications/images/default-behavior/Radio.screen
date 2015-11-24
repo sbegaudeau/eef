@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:TabbedPane" id="1" x="48" y="48" width="651" height="257" text="Properties View" measuredWidth="651" measuredHeight="257" selection="0">
+    <items x="10" y="0" width="104" height="27" text="Properties View"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:List" id="6" x="58" y="96" text="(o) Label 1&#xA;( ) Label 2&#xA;( ) Label 3&#xA;( ) Label 4" measuredWidth="68" measuredHeight="92" border="false" alpha="0">
+    <font/>
+    <items x="0" y="2" width="68" height="22" text="(o) Label 1"/>
+    <items x="0" y="24" width="68" height="22" text="( ) Label 2"/>
+    <items x="0" y="46" width="68" height="22" text="( ) Label 3"/>
+    <items x="0" y="68" width="68" height="22" text="( ) Label 4"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>
