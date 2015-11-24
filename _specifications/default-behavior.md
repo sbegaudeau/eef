@@ -30,7 +30,7 @@ The following table defines how each structural features will be represented by 
 |  EByte             | Text                     |
 |  EByteArray        | Text                     |
 |  EBoolean          | Checkbox                 |
-|  EEnum             | Radio                    |
+|  EEnum             | Radio or Combo           |
 |  EDate             | DatePicker               |
 |  EList             | MultipleValuesEditor     |
 | Many EAttributes   | MultipleValuesEditor     |
