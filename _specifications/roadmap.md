@@ -48,8 +48,7 @@ This work will be **realized by the Sirius team** in `oes.common.query.*`: **2d*
 ###### Default behavior and customization
 
 - default behavior of properties.ecore
-  - definition of the default behavior expected (each structural should have a default widget in the order of the structural features)
-  - definition of the default rules in a default.properties **1d**
+  - definition of the default behavior expected (each structural should have a default widget in the order of the structural features) **1d**
 - how can we keep / remove other tabs provided by other tools (GMF, Advanced, Semantic) **2d**
   - may **depend on work on the Sirius side**
 
@@ -98,7 +97,8 @@ The specifier can also define that a properties view is visible only when a Siri
 - button (test with dialogs -> browse button with fileselector /!\ lifecycle) **3d**
 - dynamic mappings **3d**
   - for iterator in collectionExpression (domainClass.eAllStructuralFeatures) -> switch switchExpression -> case valueExpression
-- implementation of the default behavior **1d**
+- implementation of the default behavior
+  - definition of the default rules in a default.properties **1d**
 - implementation of a prototype of the custom widget (color picker) **1d**
   - we will use this example to evaluate the API needed to support custom widgets
 
