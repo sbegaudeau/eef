@@ -4,82 +4,91 @@ description: Roadmap
 ---
 
 
-##### M4 11/12/15 availability 4 weeks or 30 days (planning 30 days)
+##### Neon M4 (2015-12-11)
+
+* _Availability_: 4 weeks or 30 days
+* _Estimation_: 30 days
 
 The goal of this milestone is to build an industrialized prototype.
 At the end of this milestone, we provide an update site for EEF and an update site for a specific Sirius version. 
 With this milestone a Sirius specifier is able to specify in a odesign file a new properties view description. He is able to create in the VSM properties views, tabs, sections and Text widgets. Following the Sirius philosophy, the properties view description is interpreted at runtime by Sirius and is based on binding description. Same as in classical Sirius representation, the mapping are based on semantic candidates defined with domain class and interpreted expressions.
 When the end user selects a diagram element in a Sirius based modeler, the properties view shows the selected element properties. Only text widget elements are available.
 
-###### DSLs
+###### Metamodels (DSLs)
 
-- ![DONE](images/status-done.svg)  Remove unnecessary concepts from `eef.ecore` (domain class?) **2d**
+- ![DONE](images/status-done.svg) Remove unnecessary concepts from `eef.ecore` (Est: **2 days**)
   - fresh start with a new `eef.ecore` and rename the old one (we won't have the generated code of the "old" one)
   - only keep the concepts that can be used from `properties.ecore`, and only the ones needed for the current milestone.
-- ![DONE](images/status-done.svg) _Sirius_: add support for unknown/optional extensions in the VSM (in particular, under _Group_)
-  - use EMF's native mechanism (see http://ed-merks.blogspot.fr/2008/01/creating-children-you-didnt-know.html)
+- ![DONE](images/status-done.svg) Sirius: add support for unknown/optional extensions in the VSM (in particular, under _Group_)
+  - use EMF's [native mechanism](http://ed-merks.blogspot.fr/2008/01/creating-children-you-didnt-know.html)
   - take this opportunity to remove Sirius's legacy way of doing this and replace it with EMF's mechanism
 
-###### Widgets
+###### Runtime
 
-- ![WIP](images/status-wip.svg)  Add support for different semantic candidates (pages / groups) **7d** => PCD
+- ![DONE](images/status-done.svg) Extract a basic query API in new `org.eclipse.sirius.common.query`
+  - the new API should not depend on the rest of Sirius and can be used by EEF.
+- ![WIP](images/status-wip.svg) Add support for different semantic candidates (pages / groups) (Est: **7d**)
   - change the "self" used for a Page, a Group, etc...
-    - see org.eclipse.eef.core.internal.EEFPageImpl.createControl()
+    - see `org.eclipse.eef.core.internal.EEFPageImpl.createControl()`
   - accessible variables for each expression? how to manage them?
-     - "IVariableManager" in a Sirius bundle named `org.eclipse.sirius.common.query`
+     - `IVariableManager` in a Sirius bundle named `org.eclipse.sirius.common.query`
   - **depends on work on the Sirius side** (see below)
-   
-- ![WIP](images/status-wip.svg) Fully implement a simple _Text Field_ widget
-  - lifecycle (edit initial operation / valueExpression) **1d**
-    - see org.eclipse.eef.ide.ui.internal.data.EEFSection.aboutToBeShown().new IConsumer() {...}.apply(String)
-  - refactor the controller and instantiation of the widgets **2d**
-    - org.eclipse.eef.ide.ui.internal.data.EEFSection.createControls(Composite, TabbedPropertySheetPage)
-
-###### Interpreters
-
-This work will be **realized by the Sirius team** in `oes.common.query.*`: **2d** => PCD
-
-- ![DONE](images/status-done.svg) extract next-gen query API in new `org.eclipse.sirius.common.query` that do not depend on the rest of Sirius and can be used by EEF.
-- ![WIP](images/status-wip.svg) beside improvements made possible by a fresh start, the new version show take care to provide a good solution for variable scope management, and variables in general (to prepare for more complex features planned for later with expressions.ecore).
-- ![TODO](images/status-todo.svg) new interpreter API in sirius (specification and integration)
-  - variables lifecycle (remove setVariables / unsetVariables)
+- ![WIP](images/status-wip.svg) [Improve the interpreter API](https://bugs.eclipse.org/bugs/show_bug.cgi?id=482993)
+  - improved variable scoping and lifecycle (remove setVariables / unsetVariables)
   - completion proposals (EMF 2.8's styled strings for the display and information)
   - camel case support and filters for the interpreters and proposals
 
+###### Widgets
+
+- ![DONE](images/status-done.svg) Fully implement a simple _Text Field_ widget
+  - lifecycle (edit initial operation / valueExpression) (Est: **1d**)
+    - see `org.eclipse.eef.ide.ui.internal.data.EEFSection.aboutToBeShown().new IConsumer() {...}.apply(String)`
+  - refactor the controller and instantiation of the widgets (Est: **2d**)
+    - `org.eclipse.eef.ide.ui.internal.data.EEFSection.createControls(Composite, TabbedPropertySheetPage)`
+
 ###### Default behavior and customization
 
-- ![DONE](images/status-done.svg)  Default behavior of properties.ecore
-  - definition of the default behavior expected (each structural should have a default widget in the order of the structural features) **1d**
-- ![DONE](images/status-done.svg)  how can we keep / remove other tabs provided by other tools (GMF, Advanced, Semantic) **2d**
+- ![DONE](images/status-done.svg) Sepcify the default behavior of `properties.ecore`
+  - [definition of the default behavior](default-behavior.html) expected (each structural should have a default widget in the order of the structural features) (Est: **1d**)
+- ![DONE](images/status-done.svg) [Ensure seamless integration with tabs provided by other tools](https://git.eclipse.org/r/#/c/63098/) (GMF, Advanced, Semantic) (Est: **2d**)
   - may **depend on work on the Sirius side**
+  
 
 ###### Lifecycle
 
 We need to have a clear vision of the way the lifecycle of our application works. At the very least we should document the rules and constraints imposed by the Eclipse properties view framework. If possible we should hide some/most of the complexity under a simpler façade which isolates the rest of our work from the complexities and/or enforce the constraints.
 
-- ![DONE](images/status-done.svg)lifecycle to create the Properties view **1d**
-- ![DONE](images/status-done.svg) lifecycle of the interaction with Eclipse Sirius **2d**
-- ![TODO](images/status-todo.svg) take into account the validation **1d**
-- ![TODO](images/status-todo.svg)  read only **1d**
-- ![TODO](images/status-todo.svg)  evaluate the performances and capabilities of SWT **2d**
+- ![DONE](images/status-done.svg) [Fork the tabbed-property views framework](https://git.eclipse.org/c/eef/org.eclipse.eef.git/tree/plugins/org.eclipse.eef.properties.ui)
+  - The existing framework has too many limitations, especially in terms of dynamic behavior.
+- ![DONE](images/status-done.svg) [Understand and document the lifecycle of properties view](images/lifecycle.png) **1d**
+- ![WIP](images/status-wip.svg) Lifecycle of the interaction with Eclipse Sirius **2d**
+- ![TODO](images/status-todo.svg) Take into account the validation **1d**
+- ![TODO](images/status-todo.svg) Take "read only/locked" status into account **1d**
+- ![TODO](images/status-todo.svg) Evaluate the performances and capabilities of SWT **2d**
   - ability to create and destroy widgets (hide them?)
   - scaling (how many widgets? are pages not displayed refreshed?)
-  - this may 
+  - we need this info to have an idea of how much dynamicity in the contents of the property views we can expect to support
 
-###### EMF Edit (see https://bugs.eclipse.org/bugs/show_bug.cgi?id=482831)
+###### EMF Edit Support in Sirius
 
-- ![WIP](images/status-wip.svg) [Specification](http://sbegaudeau.github.io/eef/specifications/emf-integration.html) with the Sirius team **2d**
-  - ![WIP](images/status-wip.svg) identify the parts of EMF.Edit that make sense to expose more directly from the VSM (e.g. when configuring a _labelExpression_, it should be easy to say "use the label provider I've already customized for my metamodel")
-  - ![WIP](images/status-wip.svg) prioritize which of these mechanisms will be needed earlier than others to be exploited by EEF
-  - ![WIP](images/status-wip.svg) launch the corresponding work on the Sirius team.
+The goal is to make it easy/natural to benefit from manual customizations done on the EMF.Edit generated code (e.g. item providers) from Sirius-based modelers wherever it makes sense. This includes, but is not limited to, the property views.
+
+- ![DONE](images/status-done.svg) [Specification](http://sbegaudeau.github.io/eef/specifications/emf-integration.html) with the Sirius team **2d**
+  - ![DONE](images/status-done.svg) Identify the parts of EMF.Edit that make sense to expose more directly from the VSM
+    - for example when configuring a _labelExpression_, it should be easy to say "use the label provider I've already customized for my metamodel"
+  - ![WIP](images/status-wip.svg) Prioritize which of these mechanisms will be needed earlier than others to be exploited by EEF
+  - ![DONE](images/status-done.svg) Launch [the corresponding work on the Sirius team](see https://bugs.eclipse.org/bugs/show_bug.cgi?id=482831).
 
 ###### Release engineering and project management
 
-- ![WIP](images/status-wip.svg) technical documentation **2d**
-- ![WIP](images/status-wip.svg) unit tests, continuous integration and integration with Gerrit **2d**
-- ![DONE](images/status-done.svg) contribute to the EEF update site for Eclipse Sirius
+- ![DONE](images/status-done.svg) Technical documentation **2d**
+- ![WIP](images/status-wip.svg) Unit tests, [continuous integration](https://hudson.eclipse.org/eef/job/eef-incubation-master/) and [integration with Gerrit](https://hudson.eclipse.org/eef/job/master-gerrit/) **2d**
+- ![DONE](images/status-done.svg) Contribute to the [EEF update site](http://download.eclipse.org/modeling/emft/eef/updates/nightly/latest/neon) for Eclipse Sirius
 
-##### M5 29/01/16 availability 7 weeks or 50 days (planning 46 days)
+##### Neon M5 (2016-01-29)
+
+* _Availability_: 7 weeks or 50 days
+* _Estimation_: 46 days
 
 The goal of this milestone is to support basic widgets and dynamic mappings.
 At the end of this milestone, we provide some more basic widgets : Checkbox, Combo, Label, Radio, TextArea, Button.

@@ -190,3 +190,8 @@ html, body {
 .mdl-eef .mdl-data-table--borderless td {
   border-bottom: 0px;
 }
+
+code, pre {
+    color: #050505 !important;
+    background-color: #ffffff !important
+}
