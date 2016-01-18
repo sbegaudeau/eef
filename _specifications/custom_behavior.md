@@ -7,6 +7,9 @@ The document specifies the rules by which view descriptions (instance(s) of `pro
 
 This process takes as primary input the Eclipse selection, given as input to the property view by the workbench via `TabbedPropertySheetPage.selectionChanged(IWorkbenchPart, ISelection)`. From this primary input we first derive secondary input information, in particular the *effective description* to consider to produce the concrete properties view. This effective description will be a list of `PageDescription` instances. These are then transformed into `EEFPageDescription` (wrapped in an `EEFViewDescription`)
 
+<!-- Source: https://docs.google.com/drawings/d/105gWKtfalSjmrLKqO7iU-RrEAcevQG4N2U1Bjim6s0o/edit?usp=sharing -->
+<img src="images/lifecycle_steps.png" width="100%"/>
+
 ##### Input and Effective Description
 
 Our contribution to the `org.eclipse.ui.views.properties.tabbed.propertyContributor` extension point is (currently) only enabled for Sirius editors (diagrams, tables and trees), so in our case the selection (primary input) will always be a Sirius-owned element (`DRepresentation`, `DSemanticDecorator` or `GraphicalEditPart` which represents a `DRepresentation` or `DSemanticDecorator`) or a semantic `EObject` which is part of a Sirius session. 
