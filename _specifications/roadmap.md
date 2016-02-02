@@ -98,10 +98,10 @@ The specifier can also define that a properties view is visible only when a Siri
 
 ###### Widgets
 
-- checkbox **2d**
-- combo **3d**
+- ![WIP](images/status-wip.svg) checkbox **2d**
+- ![DONE](images/status-done.svg) combo **3d**
 - ![DONE](images/status-done.svg) label **2d**
-- radio **2d**
+- ![WIP](images/status-wip.svg)radio **2d**
 - textArea **1d**
 - button (test with dialogs -> browse button with fileselector /!\ lifecycle) **3d**
 - dynamic mappings **3d**
