@@ -27,14 +27,14 @@ When the end user selects a diagram element in a Sirius based modeler, the prope
 
 - ![DONE](images/status-done.svg) Extract a basic query API in new `org.eclipse.sirius.common.query`
   - the new API should not depend on the rest of Sirius and can be used by EEF.
-- ![WIP](images/status-wip.svg) Add support for different semantic candidates (pages / groups) (Est: **7d**)
+- ![DONE](images/status-done.svg) Add support for different semantic candidates (pages / groups) (Est: **7d**)
   - change the "self" used for a Page, a Group, etc...
     - see `org.eclipse.eef.core.internal.EEFPageImpl.createControl()`
   - accessible variables for each expression? how to manage them?
      - `IVariableManager` in a Sirius bundle named `org.eclipse.sirius.common.query`
   - **depends on work on the Sirius side** (see below)
 - ![WIP](images/status-wip.svg) [Improve the interpreter API](https://bugs.eclipse.org/bugs/show_bug.cgi?id=482993)
-  - improved variable scoping and lifecycle (remove setVariables / unsetVariables)
+  - ![DONE](images/status-done.svg) improved variable scoping and lifecycle (remove setVariables / unsetVariables)
   - completion proposals (EMF 2.8's styled strings for the display and information)
   - camel case support and filters for the interpreters and proposals
 
@@ -76,13 +76,13 @@ The goal is to make it easy/natural to benefit from manual customizations done o
 - ![DONE](images/status-done.svg) [Specification](http://sbegaudeau.github.io/eef/specifications/emf-integration.html) with the Sirius team **2d**
   - ![DONE](images/status-done.svg) Identify the parts of EMF.Edit that make sense to expose more directly from the VSM
     - for example when configuring a _labelExpression_, it should be easy to say "use the label provider I've already customized for my metamodel"
-  - ![WIP](images/status-wip.svg) Prioritize which of these mechanisms will be needed earlier than others to be exploited by EEF
+  - ![DONE](images/status-done.svg) Prioritize which of these mechanisms will be needed earlier than others to be exploited by EEF
   - ![DONE](images/status-done.svg) Launch [the corresponding work on the Sirius team](see https://bugs.eclipse.org/bugs/show_bug.cgi?id=482831).
 
 ###### Release engineering and project management
 
 - ![DONE](images/status-done.svg) Technical documentation **2d**
-- ![WIP](images/status-wip.svg) Unit tests, [continuous integration](https://hudson.eclipse.org/eef/job/eef-incubation-master/) and [integration with Gerrit](https://hudson.eclipse.org/eef/job/master-gerrit/) **2d**
+- ![DONE](images/status-done.svg) Unit tests, [continuous integration](https://hudson.eclipse.org/eef/job/eef-incubation-master/) and [integration with Gerrit](https://hudson.eclipse.org/eef/job/master-gerrit/) **2d**
 - ![DONE](images/status-done.svg) Contribute to the [EEF update site](http://download.eclipse.org/modeling/emft/eef/updates/nightly/latest/neon) for Eclipse Sirius
 
 ##### Neon M5 (2016-01-29)
@@ -98,24 +98,24 @@ The specifier can also define that a properties view is visible only when a Siri
 
 ###### Widgets
 
-- ![WIP](images/status-wip.svg) checkbox **2d**
+- ![DONE](images/status-done.svg) checkbox **2d**
 - ![DONE](images/status-done.svg) combo **3d**
 - ![DONE](images/status-done.svg) label **2d**
-- ![WIP](images/status-wip.svg)radio **2d**
+- ![WIP](images/status-wip.svg) radio **2d**
 - textArea **1d**
 - button (test with dialogs -> browse button with fileselector /!\ lifecycle) **3d**
-- dynamic mappings **3d**
+- ![DONE](images/status-done.svg) dynamic mappings **3d**
   - for iterator in collectionExpression (domainClass.eAllStructuralFeatures) -> switch switchExpression -> case valueExpression
-- implementation of the default behavior
+- ![WIP](images/status-wip.svg) implementation of the default behavior
   - definition of the default rules in a default.properties **1d**
 - implementation of a prototype of the custom widget (color picker) **1d**
   - we will use this example to evaluate the API needed to support custom widgets
 
-- context **10d**
+- ![WIP](images/status-wip.svg) context **10d**
   - viewpoint, representation, layer, filter, mapping
   - model explorer ~> lack of context with the Eclipse Sirius bridge
 
-- tab order **2d**
+- ![WIP](images/status-wip.svg) tab order **2d**
 
 ###### EMF Edit (see https://bugs.eclipse.org/bugs/show_bug.cgi?id=482831)
 
