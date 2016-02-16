@@ -6,22 +6,29 @@ title: Specifications
   <section class="section--center mdl-grid">
     <div class="mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
       <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-        <h4 class="mdl-cell mdl-cell--12-col">Functional &amp; Technical Specifications</h4>
+        <h4 class="mdl-cell mdl-cell--12-col">Meeting Minutes</h4>
+
         <div class="section__text mdl-cell mdl-cell--12-col">
-          <table class="mdl-data-table mdl-data-table--borderless mdl-js-data-table mdl-cell--12-col">
-            <thead>
-              <tr>
-                <th class="mdl-data-table__cell--non-numeric">Title</th>
-              </tr>
-            </thead>
-            <tbody>
-              {% for specification in site.specifications %}
-              <tr>
-                <td class="mdl-data-table__cell--non-numeric"><a href="{{ site.baseurl }}{{ specification.url | replace_first:'/','' }}">{{ specification.description }}</a></td>
-              </tr>
-              {% endfor %}
-            </tbody>
-          </table>
+          <ul>
+            <li><a href="{{ site.baseurl }}specifications/intro"> Introduction</a></li>
+            <li><a href="{{ site.baseurl }}specifications/framework"> Properties view framework</a></li>
+            <li><a href="{{ site.baseurl }}specifications/architecture/architecture"> Interpreted properties view architecture</a></li>
+            <ul>
+             <li><a href="{{ site.baseurl }}specifications/architecture/sirius/sirius-properties-ui"> Sirius Tab Descriptor Provider</a></li>
+             <li><a href="{{ site.baseurl }}specifications/architecture/sirius/interpreter"> Sirius Interpreter</a></li>
+             <li><a href="{{ site.baseurl }}specifications/architecture/sirius/sirius-properties"> Sirius properties</a></li>
+             <li><a href="{{ site.baseurl }}specifications/architecture/eef/eef"> EEF</a></li>
+             <ul>
+              <li><a href="{{ site.baseurl }}specifications/architecture/eef/metamodel"> EEF Metamodel</a></li>
+              <li><a href="{{ site.baseurl }}specifications/architecture/eef/lifecycle"> Lifecycle</a></li>
+              <li><a href="{{ site.baseurl }}specifications/architecture/eef/widgets"> Widgets</a></li>
+              <li><a href="{{ site.baseurl }}specifications/architecture/eef/context"> Context</a></li>
+              <li><a href="{{ site.baseurl }}specifications/architecture/eef/styles"> Styles</a></li>
+              <li><a href="{{ site.baseurl }}specifications/architecture/eef/validation"> Validation</a></li>
+             </ul>
+            </ul>
+            <li><a href="{{ site.baseurl }}specifications/releng"> Releng</a></li>
+          </ul>
         </div>
       </div>
     </div>
