@@ -6,6 +6,7 @@ description: EEF properties view framework
 #### Eclipse tabbed properties view framework
 
 The generic _Properties_ view is implemented in `org.eclipse.ui.views.properties.PropertySheet`. It does mainly two things (of interest to us):
+
 1. Listen to which parts (view or editors) are active on the workbench, and for each one determines how they want they properties displayed. This is done by calling `Adapters.adapt(part, IPropertySheetPage.class)` on each part of interest, and caching the resulting `IPropertySheetPage` instance. `IPropertySheetPage.createControl(Composite parent)` is the method in which the actual SWT widgets will be created.
 2. Listen to the selection changes in the workbench (`PropertySheet` is an `org.eclipse.ui.ISelectionListener`). When the user selects an element in a part (view or editor), the workbench calls `selectionChanged(IWorkbenchPart part, ISelection  selection)` on all the registered `org.eclipse.ui.ISelectionListener`. When the `PropertySheet` receives this call, it enables the `IPropertySheetPage` corresponding to the specified part (creating it if necessary), and passes the selection to it via a similar `selectionChanged()` call.
 
