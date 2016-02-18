@@ -5,6 +5,24 @@ description: EEF properties view framework
 
 #### Eclipse tabbed properties view framework
 
+The generic _Properties_ view is implemented in `org.eclipse.ui.views.properties.PropertySheet`. It does mainly two things (of interest to us):
+1. Listen to which parts (view or editors) are active on the workbench, and for each one determines how they want they properties displayed. This is done by calling `Adapters.adapt(part, IPropertySheetPage.class)` on each part of interest, and caching the resulting `IPropertySheetPage` instance. `IPropertySheetPage.createControl(Composite parent)` is the method in which the actual SWT widgets will be created.
+2. Listen to the selection changes in the workbench (`PropertySheet` is an `org.eclipse.ui.ISelectionListener`). When the user selects an element in a part (view or editor), the workbench calls `selectionChanged(IWorkbenchPart part, ISelection  selection)` on all the registered `org.eclipse.ui.ISelectionListener`. When the `PropertySheet` receives this call, it enables the `IPropertySheetPage` corresponding to the specified part (creating it if necessary), and passes the selection to it via a similar `selectionChanged()` call.
+
+One very commonly used implementation of `IPropertySheetPage` is `TabbedPropertySheetPage`, which exists in its own bundle, `org.eclipse.ui.views.properties.tabbed`. It is only one possible implementation of `IPropertySheetPage`. It defines its own mini-framework to structure the content of the property sheet in terms of pages (tabs) composed of sections, themselves made of widgets. Which concrete pages and sections are visible and in which order for a given selection is determined by the contributions registered through various extension points (`propertyContributor`, `propertyTabs`, `propertySection`).
+
+This makes the framework very extensible, as it is possible for a plug-in to contribute new sections or tabs to an existing editor without changing its code. This is for example how Sirius transparently adds its own tabs to the diagram editor in addition to the ones defined by GMF Runtime, or how the tabs and sections of the VSM editor properties are a mix of elements coming from the core `viewpoint.ecore` and from dialect-specific properties like `diagram.ecore`.
+
+This configuration mechanism based on extension points is however a very static approach, and this reflects in the structure of the `org.eclipse.ui.views.properties.tabbed` itself and the lifecycle it assumes (and imposes) on the tabs and sections. In the context of Sirius, users expect a much higher level of dynamicity, which could not be provided using `org.eclipse.ui.views.properties.tabbed`, so we created an alternative implementation named `org.eclipse.eef.properties.ui`. It is basically a fork of the existing framework, but much more dynamic:
+- it does not rely on static information (in `plugin.xml`) to determine structure of the pages (still made of tabs and sections);
+- the lifecycle it implements supports arbitrary changes in this structure at almost any point, which makes is possible for example for tabs to appear/disappear dynamically, something which was not possible with the existing framework.
+
+TODO:
+- explain IEEFTabDescriptorProvider and the extension point
+- explain how to use this new framework instead of the old one
+- explain that underneath it is still about pages (tabs) and sections
+- explain the legacy bridge
+
 #### EEF framework
 
 The EEF tabbed property sheet page framework is a fork of the Tabbed property sheet page framework provided by the `org.eclipse.ui.views.properties.tabbed` plugin.
