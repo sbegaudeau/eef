@@ -101,14 +101,14 @@ The specifier can also define that a properties view is visible only when a Siri
 - ![DONE](images/status-done.svg) checkbox **2d**
 - ![DONE](images/status-done.svg) combo **3d**
 - ![DONE](images/status-done.svg) label **2d**
-- ![WIP](images/status-wip.svg) radio **2d**
-- textArea **1d**
-- button (test with dialogs -> browse button with fileselector /!\ lifecycle) **3d**
+- ![DONE](images/status-done.svg) radio **2d**
+- ![DONE](images/status-done.svg) textArea **1d**
+- ![DONE](images/status-done.svg) button (test with dialogs -> browse button with fileselector /!\ lifecycle) **3d**
 - ![DONE](images/status-done.svg) dynamic mappings **3d**
-  - for iterator in collectionExpression (domainClass.eAllStructuralFeatures) -> switch switchExpression -> case valueExpression
+- ![DONE](images/status-done.svg) for iterator in collectionExpression (domainClass.eAllStructuralFeatures) -> switch switchExpression -> case valueExpression
 - ![WIP](images/status-wip.svg) implementation of the default behavior
-  - definition of the default rules in a default.properties **1d**
-- implementation of a prototype of the custom widget (color picker) **1d**
+- ![WIP](images/status-wip.svg) definition of the default rules in a default.properties **1d**
+- ![WIP](images/status-wip.svg) implementation of a prototype of the custom widget (color picker) **1d**
   - we will use this example to evaluate the API needed to support custom widgets
 
 - ![WIP](images/status-wip.svg) context **10d**
@@ -168,7 +168,7 @@ Integration of the EMF Edit support created by the Sirius team **5d**
 
 ###### Validation and messages
 
-Development **10d**
+![WIP](images/status-wip.svg) Development **10d**
 
 - Message and kind on widgets, groups, view ([message manager](https://www.eclipse.org/eclipse/platform-ua/proposals/forms/enhancements-3.3/))
 - Markers and Problems view
