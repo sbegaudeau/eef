@@ -7,6 +7,9 @@
   <widgets xsi:type="model:Label" id="2" x="58" y="96" text="Label" measuredWidth="34" measuredHeight="23">
     <font/>
   </widgets>
+  <widgets xsi:type="model:Text" id="5" x="104" y="96" width="569" height="137" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus egestas rutrum nunc sit amet fermentum. Sed efficitur ullamcorper arcu, sed elementum dui feugiat at. Fusce aliquam, ante ut bibendum fringilla, leo purus hendrerit dolor, eu hendrerit nulla augue sed eros. Pellentesque rhoncus, ante non ultrices accumsan, odio mi auctor ligula, in pulvinar nulla velit quis justo. Phasellus sed erat eget ante tempus porttitor non sed orci. In dictum, nisl eget facilisis rhoncus, justo ipsum faucibus elit, a facilisis dui dui vel arcu. Nulla lobortis, tellus non feugiat tristique, felis dui dictum elit, elementum facilisis tortor justo pharetra lorem. Vivamus tincidunt purus vel lectus interdum tempus. Suspendisse laoreet posuere libero, non faucibus enim feugiat nec." measuredWidth="569" measuredHeight="137">
+    <font/>
+  </widgets>
   <hRuler/>
   <vRuler/>
   <font size="12px"/>

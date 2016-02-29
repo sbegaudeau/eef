@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:TabbedPane" id="1" x="48" y="48" width="651" height="257" text="Properties View" measuredWidth="651" measuredHeight="257" selection="0">
+    <items x="10" y="0" width="104" height="27" text="Properties View"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TabbedPane" id="35" x="48" y="75" width="651" height="230" text="Tab One,Tab Two,Tab Three" measuredWidth="651" measuredHeight="230" selection="0" position="left">
+    <items x="0" y="10" width="72" height="25" text="Tab One"/>
+    <items x="0" y="35" width="72" height="25" text="Tab Two"/>
+    <items x="0" y="60" width="72" height="25" text="Tab Three"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Group" id="37" x="130" y="85" width="559" height="210" text="Section 1" measuredWidth="559" measuredHeight="210">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Note" id="44" x="760" y="124" text="semanticCandidateExpression" measuredWidth="175" measuredHeight="29">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="45" x="688" y="103" width="73" height="33" measuredWidth="73" measuredHeight="33"/>
+  <widgets xsi:type="model:Group" id="46" x="140" y="112" width="539" height="53" text="Section 1.1" measuredWidth="539" measuredHeight="53">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Note" id="47" x="768" y="208" text="groups" measuredWidth="54" measuredHeight="29">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="48" x="678" y="202" width="91" height="27" measuredWidth="91" measuredHeight="27"/>
+  <widgets xsi:type="model:Group" id="49" x="140" y="176" width="539" height="53" text="Section 1.2" measuredWidth="539" measuredHeight="53">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="29" x="184" y="33" width="97" height="53" measuredWidth="97" measuredHeight="53" direction="bottom"/>
+  <widgets xsi:type="model:Note" id="25" x="280" y="20" text="labelExpression" measuredWidth="99" measuredHeight="29">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Group" id="50" x="140" y="236" width="539" height="53" text="Section 1.3" measuredWidth="539" measuredHeight="53">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="52" x="678" y="144" width="91" height="75" measuredWidth="91" measuredHeight="75"/>
+  <widgets xsi:type="model:Arrow" id="53" x="678" y="230" width="90" height="34" measuredWidth="90" measuredHeight="34" direction="bottom"/>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:TabbedPane" id="1" x="48" y="48" width="651" height="257" text="Properties View" measuredWidth="651" measuredHeight="257" selection="0">
+    <items x="10" y="0" width="104" height="27" text="Properties View"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TabbedPane" id="35" x="48" y="75" width="651" height="230" text="Tab One,Tab Two,Tab Three" measuredWidth="651" measuredHeight="230" selection="0" position="left">
+    <items x="0" y="10" width="72" height="25" text="Tab One"/>
+    <items x="0" y="35" width="72" height="25" text="Tab Two"/>
+    <items x="0" y="60" width="72" height="25" text="Tab Three"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="2" x="162" y="96" text="Label1" measuredWidth="41" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Text" id="5" x="208" y="96" width="473" height="65" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus egestas rutrum nunc sit amet fermentum. Sed efficitur ullamcorper arcu, sed elementum dui feugiat at. Fusce aliquam, ante ut bibendum fringilla, leo purus hendrerit dolor, eu hendrerit nulla augue sed eros. Pellentesque rhoncus, ante non ultrices accumsan, odio mi auctor ligula." measuredWidth="473" measuredHeight="65">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Group" id="13" x="206" y="160" width="257" height="33" measuredWidth="257" measuredHeight="33">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:RadioButton" id="14" x="211" y="165" text="Enum1" measuredWidth="58" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:RadioButton" id="15" x="273" y="165" text="Enum2" measuredWidth="58" measuredHeight="23" selected="true">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:RadioButton" id="16" x="337" y="165" text="Enum3" measuredWidth="58" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:RadioButton" id="17" x="401" y="165" text="Enum4" measuredWidth="58" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="18" x="165" y="165" text="Label2" measuredWidth="41" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Checkbox" id="20" x="208" y="200" text="Checkbox" measuredWidth="73" measuredHeight="23" selected="true">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="21" x="165" y="200" text="Label3" measuredWidth="41" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="23" x="165" y="232" text="Label4" measuredWidth="41" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Combo" id="24" x="206" y="232" text="Value1&#xA;Value2&#xA;Value3" measuredWidth="63" measuredHeight="65">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Note" id="25" x="8" y="170" text="labelExpression" measuredWidth="99" measuredHeight="29">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="26" x="107" y="183" width="55" height="57" measuredWidth="55" measuredHeight="57" left="false" right="true"/>
+  <widgets xsi:type="model:Arrow" id="27" x="106" y="182" width="57" height="27" measuredWidth="57" measuredHeight="27" left="false" right="true"/>
+  <widgets xsi:type="model:Arrow" id="28" x="106" y="176" width="57" height="8" measuredWidth="57" measuredHeight="8" left="false" right="true" direction="bottom"/>
+  <widgets xsi:type="model:Arrow" id="29" x="107" y="104" width="55" height="73" measuredWidth="55" measuredHeight="73" left="false" right="true" direction="bottom"/>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

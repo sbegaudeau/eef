@@ -7,23 +7,60 @@ This section presents the widget concept.
 
 #### Default widgets
 
-The EEF properties tab framework supports the following widgets by default :
+The EEF properties tab framework supports the following widgets by default.
+For details about widgets metamodel see the ![EEF metamodel section]({{ site.baseurl }}specifications/architecture/eef/metamodel.html)
 
-* Label :
+##### Label
+
+The label widget is used to represent a non editable text description:
+
 ![Label]({{ site.baseurl }}specifications/architecture/eef/images/Label.png)
-* Text / TextArea :
+
+##### Text / TextArea
+
+The text widget is used to represent an editable text:
+
 ![Text]({{ site.baseurl }}specifications/architecture/eef/images/Text.png)
+
+The text area is used to represent an editable multiline text:
+
 ![TextArea]({{ site.baseurl }}specifications/architecture/eef/images/TextArea.png)
-* Checkbox :
+
+##### Checkbox
+
+The checkbox widget is used to represent a boolean :
+
 ![Checkbox]({{ site.baseurl }}specifications/architecture/eef/images/Checkbox.png)
-* Radio Group:
+
+##### Radio Group
+
+The radio group widget is used to represent a unique choice :
+
 ![Radio Group]({{ site.baseurl }}specifications/architecture/eef/images/Radio.png)
-* Button :
+
+##### Button
+
+The button widget is used to represent a click action :
+
 ![Button]({{ site.baseurl }}specifications/architecture/eef/images/Button.png)
-* Select :
+
+##### Select
+
+The select widget is used to represent a combo box :
+
 ![Select]({{ site.baseurl }}specifications/architecture/eef/images/Select.png)
 
-For details about widgets metamodel see the ![EEF metamodel section]({{ site.baseurl }}specifications/architecture/eef/metamodel.html)
+##### Single reference
+
+The single reference widget is used to represent a mono valued reference:
+
+![Single Reference]({{ site.baseurl }}specifications/architecture/eef/images/SingleReference.png)
+
+##### Multiple references
+
+The multiple references widget is used to represent a multi valued reference :
+
+![Multiple References]({{ site.baseurl }}specifications/architecture/eef/images/Multiple References.png)
 
 #### Implementation
 

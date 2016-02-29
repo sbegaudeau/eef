@@ -22,6 +22,18 @@
   <widgets xsi:type="model:TextArea" id="24" x="208" y="138" width="473" height="113" text="Text area field" measuredWidth="473" measuredHeight="113" verticalScrollbar="true">
     <font/>
   </widgets>
+  <widgets xsi:type="model:Note" id="26" x="216" text="valueExpression" measuredWidth="102" measuredHeight="29">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="27" x="240" y="28" width="33" height="77" measuredWidth="33" measuredHeight="77" direction="bottom"/>
+  <widgets xsi:type="model:Note" id="28" x="392" y="28" text="editExpression" measuredWidth="94" measuredHeight="29">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="29" x="264" y="40" width="129" height="65" measuredWidth="129" measuredHeight="65" direction="bottom"/>
+  <widgets xsi:type="model:Note" id="30" x="728" y="152" text="lineCountExpression" measuredWidth="125" measuredHeight="29">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="31" x="680" y="168" width="49" height="16" measuredWidth="49" measuredHeight="16" direction="bottom"/>
   <hRuler/>
   <vRuler/>
   <font size="12px"/>

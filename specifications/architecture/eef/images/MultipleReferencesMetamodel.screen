@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:TabbedPane" id="1" x="48" y="32" width="651" height="257" text="Properties View" measuredWidth="651" measuredHeight="257" selection="0">
+    <items x="10" y="0" width="104" height="27" text="Properties View"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="2" x="58" y="122" text="Label" measuredWidth="34" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="5" x="376" y="121" measuredWidth="36" measuredHeight="25" icon="add (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="6" x="376" y="147" measuredWidth="36" measuredHeight="25" icon="dots (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:List" id="11" x="104" y="122" width="265" height="134" text="Element1&#xA;Element2&#xA;Element3&#xA;(bg:green)|Element4&#xA;Element5" measuredWidth="265" measuredHeight="134">
+    <font/>
+    <items x="0" y="2" width="265" height="21" text="Element1"/>
+    <items x="0" y="23" width="265" height="21" text="Element2"/>
+    <items x="0" y="44" width="265" height="21" text="Element3"/>
+    <items x="0" y="65" width="265" height="21" text="(bg:green)|Element4"/>
+    <items x="0" y="86" width="265" height="21" text="Element5"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="12" x="376" y="205" measuredWidth="36" measuredHeight="25" icon="arrow-up (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="13" x="376" y="231" measuredWidth="36" measuredHeight="25" icon="arrow-down (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:VScrollbar" id="17" x="352" y="125" height="104" measuredWidth="17" measuredHeight="104"/>
+  <widgets xsi:type="model:Button" id="18" x="376" y="176" measuredWidth="36" measuredHeight="25" icon="delete (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Note" id="24" x="-112" y="162" width="130" text="valueExpression" measuredWidth="130" measuredHeight="29">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="25" x="16" y="179" width="88" height="8" measuredWidth="88" measuredHeight="8" left="false" right="true"/>
+  <widgets xsi:type="model:Note" id="26" x="-104" y="248" width="153" text="displayExpression" measuredWidth="153" measuredHeight="29">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="27" x="47" y="224" width="90" height="41" measuredWidth="90" measuredHeight="41" left="false" right="true" direction="bottom"/>
+  <widgets xsi:type="model:Note" id="28" x="440" y="69" width="126" text="createExpression" measuredWidth="126" measuredHeight="29">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="29" x="388" y="80" width="52" height="44" measuredWidth="52" measuredHeight="44" direction="bottom"/>
+  <widgets xsi:type="model:Note" id="30" x="488" y="125" width="126" text="searchExpression" measuredWidth="126" measuredHeight="29">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="31" x="411" y="144" width="77" height="19" measuredWidth="77" measuredHeight="19" direction="bottom"/>
+  <widgets xsi:type="model:Note" id="32" x="488" y="168" width="126" text="unsetExpression" measuredWidth="126" measuredHeight="29">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="33" x="411" y="179" width="78" height="18" measuredWidth="78" measuredHeight="18" direction="bottom"/>
+  <widgets xsi:type="model:Note" id="34" x="488" y="203" width="126" text="upExpression" measuredWidth="126" measuredHeight="29">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="35" x="417" y="216" width="72" height="8" measuredWidth="72" measuredHeight="8" direction="bottom"/>
+  <widgets xsi:type="model:Note" id="36" x="488" y="248" width="126" text="downExpression" measuredWidth="126" measuredHeight="29">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="37" x="416" y="244" width="73" height="20" measuredWidth="73" measuredHeight="20"/>
+  <widgets xsi:type="model:Note" id="38" x="240" y="328" width="126" text="onClickExpression" measuredWidth="126" measuredHeight="29">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="39" x="208" y="197" width="92" height="131" measuredWidth="92" measuredHeight="131"/>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

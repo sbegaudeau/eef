@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:TabbedPane" id="10" x="48" y="48" width="651" height="257" text="Properties View" measuredWidth="651" measuredHeight="257" selection="0">
+    <items x="10" y="0" width="104" height="27" text="Properties View"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TabbedPane" id="11" x="48" y="75" width="651" height="230" text="Tab One,Tab Two,Tab Three" measuredWidth="651" measuredHeight="230" selection="0" position="left">
+    <items x="0" y="10" width="72" height="25" text="Tab One"/>
+    <items x="0" y="35" width="72" height="25" text="Tab Two"/>
+    <items x="0" y="60" width="72" height="25" text="Tab Three"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="12" x="162" y="96" text="Label1" measuredWidth="41" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Text" id="13" x="208" y="96" width="473" height="65" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus egestas rutrum nunc sit amet fermentum. Sed efficitur ullamcorper arcu, sed elementum dui feugiat at. Fusce aliquam, ante ut bibendum fringilla, leo purus hendrerit dolor, eu hendrerit nulla augue sed eros. Pellentesque rhoncus, ante non ultrices accumsan, odio mi auctor ligula." measuredWidth="473" measuredHeight="65">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Note" id="6" x="384" y="40" text="bodyExpression" measuredWidth="101" measuredHeight="29">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="9" x="440" y="68" width="9" height="29" measuredWidth="9" measuredHeight="29" direction="bottom"/>
+  <widgets xsi:type="model:Hotspot" id="29" x="208" y="96" width="473" height="65" measuredWidth="473" measuredHeight="65"/>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

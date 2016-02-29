@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:TabbedPane" id="1" x="48" y="48" width="651" height="257" text="Properties View" measuredWidth="651" measuredHeight="257" selection="0">
+    <items x="10" y="0" width="104" height="27" text="Properties View"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TabbedPane" id="35" x="48" y="75" width="651" height="230" text="Tab One,Tab Two,Tab Three" measuredWidth="651" measuredHeight="230" selection="0" position="left">
+    <items x="0" y="10" width="72" height="25" text="Tab One"/>
+    <items x="0" y="35" width="72" height="25" text="Tab Two"/>
+    <items x="0" y="60" width="72" height="25" text="Tab Three"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Note" id="25" x="-88" y="203" text="labelExpression" measuredWidth="99" measuredHeight="29">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="29" x="10" y="102" width="63" height="114" measuredWidth="63" measuredHeight="114" left="false" right="true" direction="bottom"/>
+  <widgets xsi:type="model:Group" id="41" x="130" y="85" width="559" height="124" text="Section 1" measuredWidth="559" measuredHeight="124">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Group" id="42" x="130" y="224" width="559" height="71" text="Section 2" measuredWidth="559" measuredHeight="71">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Note" id="43" x="720" y="192" text="groups" measuredWidth="54" measuredHeight="29">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="44" x="688" y="160" width="33" height="44" measuredWidth="33" measuredHeight="44"/>
+  <widgets xsi:type="model:Arrow" id="45" x="688" y="208" width="33" height="57" measuredWidth="33" measuredHeight="57" direction="bottom"/>
+  <widgets xsi:type="model:Note" id="47" x="-164" y="85" text="semanticCandidateExpression" measuredWidth="175" measuredHeight="29">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="48" x="7" y="98" width="42" height="8" measuredWidth="42" measuredHeight="8" left="false" right="true"/>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

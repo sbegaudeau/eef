@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:TabbedPane" id="1" x="24" y="57" width="651" height="257" text="Properties View" measuredWidth="651" measuredHeight="257" selection="0">
+    <items x="10" y="0" width="104" height="27" text="Properties View"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="2" x="58" y="96" text="Label" measuredWidth="34" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="4" x="112" y="96" text="Element" measuredWidth="46" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="5" x="536" y="95" measuredWidth="36" measuredHeight="25" icon="add (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="6" x="576" y="95" measuredWidth="36" measuredHeight="25" icon="dots (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Tooltip" id="8" x="552" y="118" text="Create" measuredWidth="45" measuredHeight="40" position="topLeft">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Tooltip" id="9" x="596" y="57" text="Search" measuredWidth="47" measuredHeight="40">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Tooltip" id="10" x="80" y="119" text="Click" measuredWidth="36" measuredHeight="40" position="topRight">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="11" x="616" y="95" measuredWidth="36" measuredHeight="25" icon="delete (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Tooltip" id="12" x="640" y="118" text="Unset" measuredWidth="41" measuredHeight="40" position="topLeft">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>
