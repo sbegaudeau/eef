@@ -8,7 +8,7 @@ This section presents the widget concept.
 #### Default widgets
 
 The EEF properties tab framework supports the following widgets by default.
-For details about widgets metamodel see the ![EEF metamodel section]({{ site.baseurl }}specifications/architecture/eef/metamodel.html)
+For details about widgets metamodel see the [EEF metamodel section]({{ site.baseurl }}specifications/architecture/eef/metamodel)
 
 ##### Label
 
@@ -60,7 +60,7 @@ The single reference widget is used to represent a mono valued reference:
 
 The multiple references widget is used to represent a multi valued reference :
 
-![Multiple References]({{ site.baseurl }}specifications/architecture/eef/images/Multiple References.png)
+![Multiple References]({{ site.baseurl }}specifications/architecture/eef/images/MultipleReferences.png)
 
 #### Implementation
 

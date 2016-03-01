@@ -49,6 +49,59 @@
   <widgets xsi:type="model:Tooltip" id="10" x="155" y="200" width="113" height="57" text="Double click on an element" measuredWidth="113" measuredHeight="57" position="topLeft">
     <font/>
   </widgets>
+  <widgets xsi:type="model:Window" id="20" x="293" y="336" width="412" height="337" text="Set reference" measuredWidth="412" measuredHeight="337"/>
+  <widgets xsi:type="model:Button" id="24" x="480" y="460" measuredWidth="36" measuredHeight="25" icon="add (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="25" x="480" y="524" measuredWidth="36" measuredHeight="25" icon="arrow-up (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="26" x="480" y="556" measuredWidth="36" measuredHeight="25" icon="arrow-down (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="27" x="480" y="492" measuredWidth="36" measuredHeight="25" icon="delete (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="28" x="311" y="411" text="Choices" measuredWidth="47" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="29" x="557" y="411" text="Selection" measuredWidth="54" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="30" x="601" y="638" text="Cancel" measuredWidth="55" measuredHeight="25">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="31" x="659" y="638" text="OK" measuredWidth="36" measuredHeight="25">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Group" id="32" x="307" y="363" width="376" height="49" text="Filter Available Choices" measuredWidth="376" measuredHeight="49">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="33" x="361" y="384" width="312" measuredWidth="312" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="34" x="317" y="384" text="Pattern" measuredWidth="45" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="37" x="229" y="118" width="105" height="219" measuredWidth="105" measuredHeight="219" left="false" right="true"/>
+  <widgets xsi:type="model:Tree" id="38" x="307" y="437" width="166" height="187" text="Container1&#xA;-Element1&#xA;Container2&#xA;-Element2&#xA;-Element3&#xA;-Element4&#xA;" measuredWidth="166" measuredHeight="187">
+    <items x="0" y="5" width="166" height="21" text="Container1"/>
+    <items x="0" y="26" width="166" height="21" text="-Element1"/>
+    <items x="0" y="47" width="166" height="21" text="Container2"/>
+    <items x="0" y="68" width="166" height="21" text="-Element2"/>
+    <items x="0" y="89" width="166" height="21" text="-Element3"/>
+    <items x="0" y="110" width="166" height="21" text="-Element4"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Tree" id="39" x="527" y="437" width="166" height="187" text="Container1&#xA;-Element1&#xA;Container2&#xA;-Element2&#xA;-Element3&#xA;-Element4&#xA;" measuredWidth="166" measuredHeight="187">
+    <items x="0" y="5" width="166" height="21" text="Container1"/>
+    <items x="0" y="26" width="166" height="21" text="-Element1"/>
+    <items x="0" y="47" width="166" height="21" text="Container2"/>
+    <items x="0" y="68" width="166" height="21" text="-Element2"/>
+    <items x="0" y="89" width="166" height="21" text="-Element3"/>
+    <items x="0" y="110" width="166" height="21" text="-Element4"/>
+    <font/>
+  </widgets>
   <hRuler/>
   <vRuler/>
   <font size="12px"/>
