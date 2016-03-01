@@ -4,7 +4,7 @@ description: Getting started
 ---
 
 The new EEF framework integrated with Sirius will be released with EEF 1.6.0 and Sirius 4.0.0.as experimental in the next Neon release.
-Pay attention that as the framework is still *under construction* the APIs are evolving a lot.
+Be aware that as the framework is still *under construction* the APIs are evolving a lot.
 
 #### Development environment
 
@@ -13,7 +13,9 @@ Get the [Oomph configuration for Sirius](https://wiki.eclipse.org/Sirius/Contrib
 #### Getting the sources
 
 The Oomph configuration already clones the **Sirius** repository. The Sirius source code relative to the EEF integration is available on the Sirius git repository on the *master* branch in the [incubation](http://git.eclipse.org/c/sirius/org.eclipse.sirius.git/tree/incubation) folder. 
+
 Then, you need to clone the **EEF** repository : `git clone https://git.eclipse.org/r/eef/org.eclipse.eef`. The EEF source code is available on the [EEF git repository](http://git.eclipse.org/c/eef/org.eclipse.eef.git/tree/ "EEF"). The code is on the *master* branch in the plugins prefixed by *org.eclipse.eef*.
+
 Import the EEF sources from the git repository in your Eclipse.
 
 Finally, open the `sirius_neon.target` file from the `org.eclipse.sirius.targets` project in the target editor and (once it is loaded) set it as the current target.
