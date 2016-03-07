@@ -33,7 +33,7 @@ When the end user selects a diagram element in a Sirius based modeler, the prope
   - accessible variables for each expression? how to manage them?
      - `IVariableManager` in a Sirius bundle named `org.eclipse.sirius.common.query`
   - **depends on work on the Sirius side** (see below)
-- ![WIP](images/status-wip.svg) [Improve the interpreter API](https://bugs.eclipse.org/bugs/show_bug.cgi?id=482993)
+- ![DONE](images/status-done.svg) [Improve the interpreter API](https://bugs.eclipse.org/bugs/show_bug.cgi?id=482993)
   - ![DONE](images/status-done.svg) improved variable scoping and lifecycle (remove setVariables / unsetVariables)
   - completion proposals (EMF 2.8's styled strings for the display and information)
   - camel case support and filters for the interpreters and proposals
@@ -61,10 +61,10 @@ We need to have a clear vision of the way the lifecycle of our application works
 - ![DONE](images/status-done.svg) [Fork the tabbed-property views framework](https://git.eclipse.org/c/eef/org.eclipse.eef.git/tree/plugins/org.eclipse.eef.properties.ui)
   - The existing framework has too many limitations, especially in terms of dynamic behavior.
 - ![DONE](images/status-done.svg) [Understand and document the lifecycle of properties view](images/lifecycle.png) **1d**
-- ![WIP](images/status-wip.svg) Lifecycle of the interaction with Eclipse Sirius **2d**
-- ![TODO](images/status-todo.svg) Take into account the validation **1d**
-- ![TODO](images/status-todo.svg) Take "read only/locked" status into account **1d**
-- ![TODO](images/status-todo.svg) Evaluate the performances and capabilities of SWT **2d**
+- ![DONE](images/status-done.svg) Lifecycle of the interaction with Eclipse Sirius **2d**
+- ![DONE](images/status-done.svg) Take into account the validation **1d**
+- ![WIP](images/status-wip.svg) Take "read only/locked" status into account **1d**
+- ![DONE](images/status-done.svg) Evaluate the performances and capabilities of SWT **2d**
   - ability to create and destroy widgets (hide them?)
   - scaling (how many widgets? are pages not displayed refreshed?)
   - we need this info to have an idea of how much dynamicity in the contents of the property views we can expect to support
@@ -106,16 +106,16 @@ The specifier can also define that a properties view is visible only when a Siri
 - ![DONE](images/status-done.svg) button (test with dialogs -> browse button with fileselector /!\ lifecycle) **3d**
 - ![DONE](images/status-done.svg) dynamic mappings **3d**
 - ![DONE](images/status-done.svg) for iterator in collectionExpression (domainClass.eAllStructuralFeatures) -> switch switchExpression -> case valueExpression
-- ![WIP](images/status-wip.svg) implementation of the default behavior
-- ![WIP](images/status-wip.svg) definition of the default rules in a default.properties **1d**
-- ![WIP](images/status-wip.svg) implementation of a prototype of the custom widget (color picker) **1d**
+- ![DONE](images/status-done.svg) implementation of the default behavior
+- ![DONE](images/status-done.svg) definition of the default rules in a default.properties **1d**
+- ![DONE](images/status-done.svg) implementation of a prototype of the custom widget (color picker) **1d**
   - we will use this example to evaluate the API needed to support custom widgets
 
 - ![WIP](images/status-wip.svg) context **10d**
   - viewpoint, representation, layer, filter, mapping
   - model explorer ~> lack of context with the Eclipse Sirius bridge
 
-- ![WIP](images/status-wip.svg) tab order **2d**
+- ![DONE](images/status-done.svg) tab order **2d**
 
 ###### EMF Edit (see https://bugs.eclipse.org/bugs/show_bug.cgi?id=482831)
 
@@ -148,7 +148,7 @@ Fix and improvements **10d**
 
 ###### Widget
 
-- provisional API to extend properties.ecore with custom widgets (conversion in eef.ecore)
+- ![DONE](images/status-done.svg) provisional API to extend properties.ecore with custom widgets (conversion in eef.ecore)
   - how to define a custom widget in properties.ecore **2d**
   - how to make this definition evolve with the future changes in properties.ecore (regenerate the code, etc) **1d**
   - provisional java API **2d**
@@ -168,7 +168,7 @@ Integration of the EMF Edit support created by the Sirius team **5d**
 
 ###### Validation and messages
 
-![WIP](images/status-wip.svg) Development **10d**
+![DONE](images/status-done.svg) Development **10d**
 
 - Message and kind on widgets, groups, view ([message manager](https://www.eclipse.org/eclipse/platform-ua/proposals/forms/enhancements-3.3/))
 - Markers and Problems view
