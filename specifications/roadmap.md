@@ -123,10 +123,10 @@ Feedback and improvement with the Sirius team **2d**
 
 ###### Specification of the styling **10d**
 
-- Font
-- Colors (background, foreground)
-- Label (bold, italic, underline, strikethrough etc)
-- Conditional style
+- ![DONE](images/status-done.svg) Font
+- ![DONE](images/status-done.svg) Colors (background, foreground)
+- ![DONE](images/status-done.svg) Label (bold, italic, underline, strikethrough etc)
+- ![DONE](images/status-done.svg) Conditional style
 
 ###### Release engineering and project management **4d**
 
@@ -156,7 +156,7 @@ Fix and improvements **10d**
 
 ###### EMF Edit (see https://bugs.eclipse.org/bugs/show_bug.cgi?id=482831)
 
-Integration of the EMF Edit support created by the Sirius team **5d**
+ ![TODO](images/status-todo.svg) Integration of the EMF Edit support created by the Sirius team **5d**
 
 - label provider
 - choice of value
@@ -175,7 +175,7 @@ Integration of the EMF Edit support created by the Sirius team **5d**
 
 ###### Styling
 
-Implementation of the styling **20d**
+![DONE](images/status-done.svg) Implementation of the styling **20d**
 
 ###### Release engineering and project management **5d**
 
@@ -186,28 +186,53 @@ Implementation of the styling **20d**
 
 The goal of this milestone is to fix performance/scale issue. We provide also layout capabilities and some basic tooling to help the specifier to define his properties view description.
 
-###### Feedback
-
-Fix and improvements **20d**
-
 ###### Tooling **15d**
 
-- advanced features in properties.ecore
-  - reuse / import
-  - new tooling
+-  ![TODO](images/status-todo.svg) [ALL] New tooling: 
+  - generate parts of the description (reference widgets)
+  - completion
 
 ###### Performances **2d**
 
-- performance and scaling (fix everything!)
+- ![TODO](images/status-todo.svg) performance and scaling (fix everything!)
 
 ###### Layout **10d**
 
-- grid layout with containers?
+- ![WIP](images/status-wip.svg) grid layout with containers
+
+###### Widgets
+
+- ![WIP](images/status-wip.svg) [MEB] reference widgets
+- ![TODO](images/status-todo.svg) [MEB] support read-only
+- ![TODO](images/status-todo.svg) [SBE] support visibility
+- ![TODO](images/status-todo.svg) [MEB] Pre-values in text field
+- ![TODO](images/status-todo.svg) [MEB] Group style
+- ![TODO](images/status-todo.svg) [MEB] Collapse group
+- ![TODO](images/status-todo.svg) [MEB] Table widget
+- ![TODO](images/status-todo.svg) [MEB] Hyperlink widget
+
+###### Tests
+
+- ![TODO](images/status-todo.svg) [MEB] Tests RCPTT
+- ![TODO](images/status-todo.svg) [MEB] Tests with UML Designer
+- ![TODO](images/status-todo.svg) [SBE] Tests with dark theme
+
+###### Other
+
+- ![DONE](images/status-done.svg) [PCD] packaging
+- ![TODO](images/status-todo.svg) [PCD] polish (icons, label, Sirius vocabulary, section order in the odesign, available variables in the expressions
+- ![TODO](images/status-todo.svg) [PCD] link with model explorer
+- ![DONE](images/status-done.svg) [PCD] Luna support & Sirius dependencies
+- ![WIP](images/status-wip.svg) [PCD] remove TED dependency
+- ![WIP](images/status-wip.svg) [PCD] java services & interpreters (draft)
+- ![TODO](images/status-todo.svg) [ALL] remove identifiers
 
 ###### Release engineering and project management **5d**
 
-- technical documentation
-- user documentation
+- ![TODO](images/status-todo.svg) [SBE & PCD] technical documentation
+- ![TODO](images/status-todo.svg) [SBE & PCD] user documentation (Sirius & EEF)
+- ![TODO](images/status-todo.svg) [SBE] EEF web site
+- ![TODO](images/status-todo.svg) [SBE] announcement EEF 2.0 -> 1.6
 - more tests
 
 
@@ -264,9 +289,16 @@ Implementation of the dialogs et wizards
   - evaluate the need for this feature and its behavior (what should we display)
   - 1st prototype and final implementation in M6
 
-- creation of a complex widget (link eref viewer) **10d**
+- creation of a complex widget **10d**
   - find its new name :)
   - definition in properties.ecore
   - implementation
+- calendar widget
+- checkbox style (switch)
+  
+- advanced features in properties.ecore
+  - reuse / import
+  
+- style custo
 
 
