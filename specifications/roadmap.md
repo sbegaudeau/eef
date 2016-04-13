@@ -215,7 +215,7 @@ The goal of this milestone is to fix performance/scale issue. We provide also la
 
 - ![TODO](images/status-todo.svg) [MEB] Tests RCPTT
 - ![TODO](images/status-todo.svg) [MEB] Tests with UML Designer
-- ![TODO](images/status-todo.svg) [SBE] Tests with dark theme
+- ![DONE](images/status-done.svg) [SBE] Tests with dark theme
 
 ###### Other
 
@@ -300,5 +300,7 @@ Implementation of the dialogs et wizards
   - reuse / import
   
 - style custo
+
+- tests with dark theme
 
 
