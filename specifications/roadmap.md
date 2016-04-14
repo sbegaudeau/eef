@@ -203,7 +203,7 @@ The goal of this milestone is to fix performance/scale issue. We provide also la
 ###### Widgets
 
 - ![WIP](images/status-wip.svg) [MEB] reference widgets
-- ![TODO](images/status-todo.svg) [MEB] support read-only
+- ![WIP](images/status-wip.svg) [MEB] support read-only
 - ![TODO](images/status-todo.svg) [SBE] support visibility
 - ![TODO](images/status-todo.svg) [MEB] Pre-values in text field
 - ![TODO](images/status-todo.svg) [MEB] Group style
@@ -231,8 +231,8 @@ The goal of this milestone is to fix performance/scale issue. We provide also la
 
 - ![TODO](images/status-todo.svg) [SBE & PCD] technical documentation
 - ![TODO](images/status-todo.svg) [SBE & PCD] user documentation (Sirius & EEF)
-- ![TODO](images/status-todo.svg) [SBE] EEF web site
-- ![TODO](images/status-todo.svg) [SBE] announcement EEF 2.0 -> 1.6
+- ![WIP](images/status-wip.svg) [SBE] EEF web site
+- ![WIP](images/status-wip.svg) [SBE] announcement EEF 2.0 -> 1.6
 - more tests
 
 
