@@ -70,7 +70,7 @@ We need to have a clear vision of the way the lifecycle of our application works
   - we need this info to have an idea of how much dynamicity in the contents of the property views we can expect to support
 
 ###### EMF Edit Support in Sirius
-
+70837
 The goal is to make it easy/natural to benefit from manual customizations done on the EMF.Edit generated code (e.g. item providers) from Sirius-based modelers wherever it makes sense. This includes, but is not limited to, the property views.
 
 - ![DONE](images/status-done.svg) [Specification](http://sbegaudeau.github.io/eef/specifications/emf-integration.html) with the Sirius team **2d**
@@ -205,9 +205,9 @@ The goal of this milestone is to fix performance/scale issue. We provide also la
 - ![WIP](images/status-wip.svg) [MEB] reference widgets
 - ![WIP](images/status-wip.svg) [MEB] support read-only
 - ![TODO](images/status-todo.svg) [SBE] support visibility
-- ![TODO](images/status-todo.svg) [MEB] Pre-values in text field
-- ![TODO](images/status-todo.svg) [MEB] Group style
-- ![TODO](images/status-todo.svg) [MEB] Collapse group
+- ![WIP](images/status-wip.svg) [MEB] Pre-values in text field
+- ![WIP](images/status-wip.svg) [MEB] Group style
+- ![WIP](images/status-wip.svg) [MEB] Collapse group
 - ![TODO](images/status-todo.svg) [MEB] Table widget
 - ![TODO](images/status-todo.svg) [MEB] Hyperlink widget
 
