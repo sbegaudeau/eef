@@ -225,14 +225,16 @@ The goal of this milestone is to fix performance/scale issue. We provide also la
 - ![DONE](images/status-done.svg) [PCD] Luna support & Sirius dependencies
 - ![DONE](images/status-done.svg) [PCD] remove TED dependency
 - ![WIP](images/status-wip.svg) [PCD] java services & interpreters (draft)
-- ![TODO](images/status-todo.svg) [ALL] remove identifiers
+- ![TODO](images/status-todo.svg) [ALL] remove the fact that identifiers are mandatory
+- ![SBE](images/status-todo.svg) [ALL] remove useless log
+- ![SBE & PCD](images/status-todo.svg) [SBE & PCD] add support for the model accessor
 
 ###### Release engineering and project management **5d**
 
-- ![TODO](images/status-todo.svg) [SBE & PCD] technical documentation
+- ![WIP](images/status-wip.svg) [SBE & PCD] technical documentation
 - ![TODO](images/status-todo.svg) [SBE & PCD] user documentation (Sirius & EEF)
 - ![WIP](images/status-wip.svg) [SBE] EEF web site
-- ![WIP](images/status-wip.svg) [SBE] announcement EEF 2.0 -> 1.6
+- ![DONE](images/status-done.svg) [SBE] announcement EEF 2.0 -> 1.6
 - more tests
 
 
