@@ -198,18 +198,18 @@ The goal of this milestone is to fix performance/scale issue. We provide also la
 
 ###### Layout **10d**
 
-- ![WIP](images/status-wip.svg) grid layout with containers
+- ![DONE](images/status-done.svg) grid layout with containers
 
 ###### Widgets
 
 - ![WIP](images/status-wip.svg) [MEB] reference widgets
 - ![WIP](images/status-wip.svg) [MEB] support read-only
-- ![TODO](images/status-todo.svg) [SBE] support visibility
 - ![WIP](images/status-wip.svg) [MEB] Pre-values in text field
 - ![WIP](images/status-wip.svg) [MEB] Group style
 - ![WIP](images/status-wip.svg) [MEB] Collapse group
 - ![TODO](images/status-todo.svg) [MEB] Table widget
-- ![TODO](images/status-todo.svg) [MEB] Hyperlink widget
+- ![WIP](images/status-wip.svg) [MEB] Hyperlink widget
+- ![WIP](images/status-wip.svg) [SBE] quickfixes
 
 ###### Tests
 
@@ -223,7 +223,7 @@ The goal of this milestone is to fix performance/scale issue. We provide also la
 - ![TODO](images/status-todo.svg) [PCD] polish (icons, label, Sirius vocabulary, section order in the odesign, available variables in the expressions
 - ![TODO](images/status-todo.svg) [PCD] link with model explorer
 - ![DONE](images/status-done.svg) [PCD] Luna support & Sirius dependencies
-- ![WIP](images/status-wip.svg) [PCD] remove TED dependency
+- ![DONE](images/status-done.svg) [PCD] remove TED dependency
 - ![WIP](images/status-wip.svg) [PCD] java services & interpreters (draft)
 - ![TODO](images/status-todo.svg) [ALL] remove identifiers
 
@@ -240,7 +240,7 @@ The goal of this milestone is to fix performance/scale issue. We provide also la
 
 ##### Eclipse Neon 1
 
-- quickfixes
+- support visibility
 - content assist
 
 ###### Interpreters
@@ -294,6 +294,8 @@ Implementation of the dialogs et wizards
   - definition in properties.ecore
   - implementation
 - calendar widget
+- numeric widget
+- color picker widget
 - checkbox style (switch)
   
 - advanced features in properties.ecore
