@@ -226,8 +226,8 @@ The goal of this milestone is to fix performance/scale issue. We provide also la
 - ![DONE](images/status-done.svg) [PCD] remove TED dependency
 - ![WIP](images/status-wip.svg) [PCD] java services & interpreters (draft)
 - ![TODO](images/status-todo.svg) [ALL] remove the fact that identifiers are mandatory
-- ![SBE](images/status-todo.svg) [ALL] remove useless log
-- ![SBE & PCD](images/status-todo.svg) [SBE & PCD] add support for the model accessor
+- ![WIP](images/status-wip.svg) [ALL] remove useless log
+- ![WIP](images/status-wip.svg) [SBE & PCD] add support for the model accessor
 
 ###### Release engineering and project management **5d**
 
@@ -304,7 +304,5 @@ Implementation of the dialogs et wizards
   - reuse / import
   
 - style custo
-
-- tests with dark theme
 
 
